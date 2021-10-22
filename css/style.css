@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "gil-sans-bold";
+  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff") url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold; }
+
+@font-face {
+  font-family: "gil-sans-book";
+  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff") url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "gil-sans-medium";
+  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff") url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "gil-sans-semiBold";
+  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff) format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold; }
