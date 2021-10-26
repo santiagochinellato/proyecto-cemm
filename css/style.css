@@ -25,3 +25,246 @@
   font-weight: normal;
   font-style: bold;
 }
+
+@font-face {
+  font-family: "gil-sans-bold";
+  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff") url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "gil-sans-book";
+  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff") url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gil-sans-medium";
+  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff") url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gil-sans-semiBold";
+  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff) format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold;
+}
+
+header .header-carousel .header-carousel-contenedor .carousel-item {
+  width: 100%;
+  height: 40vw;
+}
+
+header .header-carousel .header-carousel-contenedor .carousel-item .header-imagen-carousel {
+  object-fit: cover !important;
+}
+
+header .header-cards {
+  z-index: 1 !important;
+  position: absolute !important;
+  top: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header .header-cards .header-cards-card-1 {
+  position: relative;
+  width: 320px;
+  height: 430px;
+  background-color: #009ba4;
+  margin: 0px 30px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 100px #a3a2a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f7f0f0;
+}
+
+header .header-cards .header-cards-card-1 .titulo-card-1 {
+  margin: 0px 0px 3vw 1.3vw;
+  font: normal 1.2em "gil-sans-bold", sans-serif;
+  font-size: 2rem;
+}
+
+header .header-cards .header-cards-card-1 .texto-card-1 {
+  margin: 0px 0px 3vw 1.3vw;
+  font: normal 0.8em "gil-sans-book", sans-serif;
+  font-size: 1rem;
+}
+
+header .header-cards .header-cards-card-1 .boton-card-1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px !important;
+  background-color: #51cdd2;
+  border: #51cdd2;
+  color: #f7f0f0;
+  font-size: 1rem !important;
+  font: normal 0.8em "gil-sans-book", sans-serif;
+}
+
+header .header-cards .header-cards-card-1 .card-1-solapa {
+  position: absolute !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: #009ba4;
+  z-index: 3;
+  top: -7%;
+  border-radius: 15px;
+  text-align: center;
+  color: #f7f0f0;
+}
+
+header .header-cards .header-cards-card-2 {
+  width: 220px;
+  height: 330px;
+  background-color: #f7f0f0;
+  margin: 0px 30px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 100px #a3a2a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .header-cards .header-cards-card-3 {
+  width: 220px;
+  height: 330px;
+  background-color: #f7f0f0;
+  margin: 0px 30px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 100px #a3a2a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .header-cards .header-cards-card-4 {
+  width: 220px;
+  height: 330px;
+  background-color: #f7f0f0;
+  margin: 0px 30px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 100px #a3a2a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .header-cards .header-cards-card-logo {
+  width: 90px;
+  margin: 60px 0px 30px 0px;
+}
+
+header .header-cards .header-cards-card-texto {
+  text-align: center;
+  font-size: 1rem !important;
+  font: normal 0.8em "gil-sans-book", sans-serif;
+  margin: 0% 10px;
+}
+
+@font-face {
+  font-family: "gil-sans-bold";
+  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff") url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "gil-sans-book";
+  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff") url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gil-sans-medium";
+  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff") url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gil-sans-semiBold";
+  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff) format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold;
+}
+
+.informacion {
+  margin: 400px 0px 100px 0px;
+  display: grid;
+  grid-template-areas: "imagen titulo" "imagen texto" "imagen checkOne" "imagen checkTwo" "imagen checkThree";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.informacion .informacion-imagen {
+  grid-area: imagen;
+  width: 100%;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.informacion .informacion-titulo {
+  grid-area: titulo;
+  margin: auto 5%;
+  font: normal 1.2em "gil-sans-bold", sans-serif;
+  font-size: 2.5rem;
+}
+
+.informacion .informacion-texto {
+  grid-area: texto;
+  margin: auto 15% auto 5%;
+  font-size: 1rem !important;
+  font: normal 0.8em "gil-sans-book", sans-serif;
+}
+
+.informacion .informacion-checklist-1 {
+  grid-area: checkOne;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0% 15% 0% 5%;
+}
+
+.informacion .informacion-checklist-2 {
+  grid-area: checkTwo;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin: 0% 15% 0% 5%;
+}
+
+.informacion .informacion-checklist-3 {
+  grid-area: checkThree;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0% 15% 0% 5%;
+}
+
+.informacion .informacion-checklist {
+  width: 50px;
+  margin-right: 3%;
+}
+
+.informacion .informacion_checklist-texto {
+  margin: 0%;
+}

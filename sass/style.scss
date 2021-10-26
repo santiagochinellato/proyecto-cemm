@@ -1,20 +1,6 @@
 // import
 
-@import "fonts";
-
+@import "fonts-variables";
+@import "header";
+@import "informacion";
 // variables
-
-// colores
-$colorPrincipal: #009ba4;
-$colorSecundario: #18a999;
-$colorTerciario: #f7f0f0;
-$colorEnfasis: #dd8669;
-$colorEnfasisDos: #ff6233;
-$colorTexto: #484349;
-
-// texto y titulos
-
-$titulo: normal 1.2em "gil-sans-bold", sans-serif;
-$subtitulo: normal 1em "gil-sans-semiBold", sans-serif;
-$texto: normal 0.8em "gil-sans-book", sans-serif;
-$textoAlternativo: normal 0.8em "gil-sans-medium", sans-serif;

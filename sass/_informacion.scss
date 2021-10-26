@@ -1,0 +1,62 @@
+// imports
+
+@import "fonts-variables";
+
+.informacion {
+  margin: 400px 0px 100px 0px;
+  display: grid;
+  grid-template-areas:
+    "imagen titulo"
+    "imagen texto"
+    "imagen checkOne"
+    "imagen checkTwo"
+    "imagen checkThree";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+
+  .informacion-imagen {
+    grid-area: imagen;
+    width: 100%;
+    border-radius: 0px 7px 7px 0px;
+  }
+  .informacion-titulo {
+    grid-area: titulo;
+    margin: auto 5%;
+    font: $titulo;
+    font-size: 2.5rem;
+  }
+  .informacion-texto {
+    grid-area: texto;
+    margin: auto 15% auto 5%;
+    font-size: 1rem !important;
+    font: $texto;
+  }
+  .informacion-checklist-1 {
+    grid-area: checkOne;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0% 15% 0% 5%;
+  }
+  .informacion-checklist-2 {
+    grid-area: checkTwo;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin: 0% 15% 0% 5%;
+  }
+  .informacion-checklist-3 {
+    grid-area: checkThree;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0% 15% 0% 5%;
+  }
+  .informacion-checklist {
+    width: 50px;
+    margin-right: 3%;
+  }
+  .informacion_checklist-texto {
+    margin: 0%;
+  }
+}
