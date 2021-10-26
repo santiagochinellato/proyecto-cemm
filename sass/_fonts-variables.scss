@@ -1,45 +1,3 @@
-// Fonts
-
-// gil sans bold
-@font-face {
-  font-family: "gil-sans-bold";
-  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff")
-    url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
-  font-weight: normal;
-  font-style: bold;
-}
-
-// gil sans book
-
-@font-face {
-  font-family: "gil-sans-book";
-  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff")
-    url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-//gil sans medium
-
-@font-face {
-  font-family: "gil-sans-medium";
-  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff")
-    url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-//gil sans semibold
-
-@font-face {
-  font-family: "gil-sans-semiBold";
-  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff)
-    format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2)
-    format("woff2");
-  font-weight: normal;
-  font-style: bold;
-}
-
 // colores
 $colorPrincipal: #009ba4;
 $colorSecundario: #18a999;
@@ -48,10 +6,57 @@ $colorCuaternario: #51cdd2;
 $colorEnfasis: #dd8669;
 $colorEnfasisDos: #ff6233;
 $colorTexto: #484349;
+$colorTextoDos: #676368;
 
-// texto y titulos
+// fonts
 
-$titulo: normal 1.2em "gil-sans-bold", sans-serif;
-$subtitulo: normal 1em "gil-sans-semiBold", sans-serif;
-$texto: normal 0.8em "gil-sans-book", sans-serif;
-$textoAlternativo: normal 0.8em "gil-sans-medium", sans-serif;
+// lato extra-light
+@font-face {
+  font-family: "lato-extra-light";
+  src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+// poppins extra-light italic
+@font-face {
+  font-family: "lato-extra-light-italic";
+  src: url(../fonts/lato/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: lighter;
+}
+// poppins light
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: lighter;
+}
+// poppins light italic
+@font-face {
+  font-family: "lato-light-italic";
+  src: url(../fonts/lato/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+// poppins regular
+@font-face {
+  font-family: "lato-regular";
+  src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// poppins bold
+@font-face {
+  font-family: "lato-bold";
+  src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: bold;
+}
+
+$titulo: "lato-bold", serif;
+$tituloSize: 3rem;
+$subtitulo: "lato-light", serif;
+$subtituloSize: 1.7rem;
+$texto: "lato-regular", serif;
+$textoSize: 1.1rem;

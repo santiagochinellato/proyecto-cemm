@@ -1,56 +1,84 @@
 @font-face {
-  font-family: "gil-sans-bold";
-  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff") url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-extra-light";
+  src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-extra-light-italic";
+  src: url(../fonts/lato/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url(../fonts/lato/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-bold";
+  src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
   font-style: bold;
 }
 
 @font-face {
-  font-family: "gil-sans-book";
-  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff") url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-extra-light";
+  src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
+  font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gil-sans-medium";
-  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff") url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-extra-light-italic";
+  src: url(../fonts/lato/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url(../fonts/lato/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gil-sans-semiBold";
-  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff) format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2) format("woff2");
-  font-weight: normal;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "gil-sans-bold";
-  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff") url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
-  font-weight: normal;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "gil-sans-book";
-  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff") url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "gil-sans-medium";
-  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff") url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "gil-sans-semiBold";
-  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff) format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-bold";
+  src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
   font-style: bold;
 }
 
@@ -81,7 +109,7 @@ header .header-cards .header-cards-card-1 {
   background-color: #009ba4;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 1px 1px 100px #a3a2a2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,15 +118,15 @@ header .header-cards .header-cards-card-1 {
 }
 
 header .header-cards .header-cards-card-1 .titulo-card-1 {
-  margin: 0px 0px 3vw 1.3vw;
-  font: normal 1.2em "gil-sans-bold", sans-serif;
-  font-size: 2rem;
+  margin: 0.5px 0px 0vw 1.3vw;
+  font-family: "lato-bold", serif;
+  font-size: 2.5rem;
 }
 
 header .header-cards .header-cards-card-1 .texto-card-1 {
-  margin: 0px 0px 3vw 1.3vw;
-  font: normal 0.8em "gil-sans-book", sans-serif;
-  font-size: 1rem;
+  margin: 2vw 15px 3vw 15px;
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
 }
 
 header .header-cards .header-cards-card-1 .boton-card-1 {
@@ -110,8 +138,8 @@ header .header-cards .header-cards-card-1 .boton-card-1 {
   background-color: #51cdd2;
   border: #51cdd2;
   color: #f7f0f0;
-  font-size: 1rem !important;
-  font: normal 0.8em "gil-sans-book", sans-serif;
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
 }
 
 header .header-cards .header-cards-card-1 .card-1-solapa {
@@ -126,114 +154,178 @@ header .header-cards .header-cards-card-1 .card-1-solapa {
   top: -7%;
   border-radius: 15px;
   text-align: center;
+  font-family: "lato-light", serif;
+  font-size: 1.7rem;
   color: #f7f0f0;
 }
 
 header .header-cards .header-cards-card-2 {
   width: 220px;
   height: 330px;
-  background-color: #f7f0f0;
+  background-color: white;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 1px 1px 100px #a3a2a2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  color: #676368;
 }
 
 header .header-cards .header-cards-card-3 {
   width: 220px;
   height: 330px;
-  background-color: #f7f0f0;
+  background-color: white;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 1px 1px 100px #a3a2a2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  color: #676368;
 }
 
 header .header-cards .header-cards-card-4 {
   width: 220px;
   height: 330px;
-  background-color: #f7f0f0;
+  background-color: white;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 1px 1px 100px #a3a2a2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  color: #676368;
 }
 
 header .header-cards .header-cards-card-logo {
-  width: 90px;
-  margin: 60px 0px 30px 0px;
+  width: 70px;
+  margin: 40px 0px 30px 0px;
 }
 
 header .header-cards .header-cards-card-texto {
   text-align: center;
-  font-size: 1rem !important;
-  font: normal 0.8em "gil-sans-book", sans-serif;
-  margin: 0% 10px;
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
+  margin: 0% 10px 25px 10px;
+}
+
+header .header-cards .header-cards-card-arrow {
+  width: 25px;
 }
 
 @font-face {
-  font-family: "gil-sans-bold";
-  src: url(./fonts/gil-sans-bold/GillSansNova-Bold.woff) format("woff") url(./fonts/gil-sans-bold/GillSansNova-Bold.woff2) format("woff2");
-  font-weight: normal;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "gil-sans-book";
-  src: url(./fonts/gil-sans-book/GillSansNova-Book.woff) format("woff") url(./fonts/gil-sans-book/GillSansNova-Book.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-extra-light";
+  src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
+  font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gil-sans-medium";
-  src: url(./fonts/gil-sans-medium/GillSansNova-Medium.woff) format("woff") url(./fonts/gil-sans-medium/GillSansNova-Medium.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-extra-light-italic";
+  src: url(../fonts/lato/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url(../fonts/lato/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gil-sans-semiBold";
-  src: url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff) format("woff") url(./fonts/gil-sans-semiBold/GillSansNova-CnSemiBold.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "lato-bold";
+  src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
   font-style: bold;
 }
 
 .informacion {
-  margin: 400px 0px 100px 0px;
+  margin: 450px 0px 250px 0px;
   display: grid;
-  grid-template-areas: "imagen titulo" "imagen texto" "imagen checkOne" "imagen checkTwo" "imagen checkThree";
+  grid-template-areas: "imagen subtitulo" "imagen titulo" "imagen texto" "imagen checkOne" "imagen checkTwo" "imagen checkThree";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: 10% 25% 45% 20% 20% 20%;
 }
 
 .informacion .informacion-imagen {
+  position: relative;
   grid-area: imagen;
   width: 100%;
   border-radius: 0px 7px 7px 0px;
 }
 
+.informacion .informacion-imagen .informacion-imagen-1 {
+  position: absolute;
+  width: 450px;
+  border-radius: 7px;
+  z-index: 1;
+  top: 30%;
+  left: 35%;
+}
+
+.informacion .informacion-imagen .informacion-imagen-2 {
+  position: absolute;
+  width: 450px;
+  border-radius: 7px;
+  z-index: 0;
+  bottom: 30%;
+  left: 10%;
+}
+
+.informacion .informacion-subtitulo {
+  grid-area: subtitulo;
+  margin: 0px 5% 30px 5%;
+  position: relative;
+  font-family: "lato-light", serif;
+  font-size: 1.7rem;
+  color: #484349;
+  font-size: 1.7rem;
+}
+
+.informacion .informacion-subtitulo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  height: 2px;
+  width: 75px;
+  background: #dd8669;
+}
+
 .informacion .informacion-titulo {
   grid-area: titulo;
-  margin: auto 5%;
-  font: normal 1.2em "gil-sans-bold", sans-serif;
-  font-size: 2.5rem;
+  margin: 30px 5% 0px 5%;
+  font-family: "lato-bold", serif;
+  font-size: 3rem;
+  color: #484349;
+  font-size: 3rem;
 }
 
 .informacion .informacion-texto {
   grid-area: texto;
   margin: auto 15% auto 5%;
-  font-size: 1rem !important;
-  font: normal 0.8em "gil-sans-book", sans-serif;
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
 }
 
 .informacion .informacion-checklist-1 {
@@ -242,6 +334,8 @@ header .header-cards .header-cards-card-texto {
   justify-content: flex-start;
   align-items: center;
   margin: 0% 15% 0% 5%;
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
 }
 
 .informacion .informacion-checklist-2 {
@@ -250,6 +344,7 @@ header .header-cards .header-cards-card-texto {
   justify-content: baseline;
   align-items: center;
   margin: 0% 15% 0% 5%;
+  font-size: 1.1rem;
 }
 
 .informacion .informacion-checklist-3 {
@@ -258,13 +353,19 @@ header .header-cards .header-cards-card-texto {
   justify-content: flex-start;
   align-items: center;
   margin: 0% 15% 0% 5%;
+  font-size: 1.1rem;
 }
 
 .informacion .informacion-checklist {
-  width: 50px;
+  width: 25px;
   margin-right: 3%;
 }
 
 .informacion .informacion_checklist-texto {
+  margin: 0%;
+}
+
+* {
+  padding: 0;
   margin: 0%;
 }

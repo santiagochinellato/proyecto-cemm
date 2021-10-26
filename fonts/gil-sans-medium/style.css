@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Gill Sans Nova';
-    src: local('Gill Sans Nova Medium'), local('Gill-Sans-Nova-Medium'),
-        url('GillSansNova-Medium.woff2') format('woff2'),
-        url('GillSansNova-Medium.woff') format('woff'),
-        url('GillSansNova-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }

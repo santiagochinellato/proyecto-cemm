@@ -1,35 +1,72 @@
-// imports
-
 @import "fonts-variables";
 
 .informacion {
-  margin: 400px 0px 100px 0px;
+  margin: 450px 0px 250px 0px;
   display: grid;
   grid-template-areas:
+    "imagen subtitulo"
     "imagen titulo"
     "imagen texto"
     "imagen checkOne"
     "imagen checkTwo"
     "imagen checkThree";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: 10% 25% 45% 20% 20% 20%;
 
   .informacion-imagen {
+    position: relative;
     grid-area: imagen;
     width: 100%;
     border-radius: 0px 7px 7px 0px;
+
+    .informacion-imagen-1 {
+      position: absolute;
+      width: 450px;
+      border-radius: 7px;
+      z-index: 1;
+      top: 30%;
+      left: 35%;
+    }
+    .informacion-imagen-2 {
+      position: absolute;
+      width: 450px;
+      border-radius: 7px;
+      z-index: 0;
+      bottom: 30%;
+      left: 10%;
+    }
+  }
+  .informacion-subtitulo {
+    grid-area: subtitulo;
+    margin: 0px 5% 30px 5%;
+    position: relative;
+    font-family: $subtitulo;
+    font-size: 1.7rem;
+    color: $colorTexto;
+    font-size: $subtituloSize;
+  }
+  .informacion-subtitulo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    height: 2px;
+    width: 75px;
+    background: $colorEnfasis;
   }
   .informacion-titulo {
     grid-area: titulo;
-    margin: auto 5%;
-    font: $titulo;
-    font-size: 2.5rem;
+    margin: 30px 5% 0px 5%;
+    font-family: $titulo;
+    font-size: 3rem;
+    color: $colorTexto;
+    font-size: $tituloSize;
   }
   .informacion-texto {
     grid-area: texto;
     margin: auto 15% auto 5%;
-    font-size: 1rem !important;
-    font: $texto;
+    font-family: $texto;
+    font-size: $textoSize;
   }
   .informacion-checklist-1 {
     grid-area: checkOne;
@@ -37,6 +74,8 @@
     justify-content: flex-start;
     align-items: center;
     margin: 0% 15% 0% 5%;
+    font-family: $texto;
+    font-size: $textoSize;
   }
   .informacion-checklist-2 {
     grid-area: checkTwo;
@@ -44,6 +83,7 @@
     justify-content: baseline;
     align-items: center;
     margin: 0% 15% 0% 5%;
+    font-size: $textoSize;
   }
   .informacion-checklist-3 {
     grid-area: checkThree;
@@ -51,9 +91,10 @@
     justify-content: flex-start;
     align-items: center;
     margin: 0% 15% 0% 5%;
+    font-size: $textoSize;
   }
   .informacion-checklist {
-    width: 50px;
+    width: 25px;
     margin-right: 3%;
   }
   .informacion_checklist-texto {
