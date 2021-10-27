@@ -302,16 +302,6 @@ header .header-cards .header-cards-card-arrow {
   font-size: 1.7rem;
 }
 
-.informacion .informacion-subtitulo::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -35px;
-  height: 2px;
-  width: 75px;
-  background: #dd8669;
-}
-
 .informacion .informacion-titulo {
   grid-area: titulo;
   margin: 30px 5% 0px 5%;
@@ -365,7 +355,157 @@ header .header-cards .header-cards-card-arrow {
   margin: 0%;
 }
 
+@font-face {
+  font-family: "lato-extra-light";
+  src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-extra-light-italic";
+  src: url(../fonts/lato/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url(../fonts/lato/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-bold";
+  src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: bold;
+}
+
+.especialidades {
+  background-image: url(../images/pictures/consultorio-original.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.especialidades .especialidades-contendor-general {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden !important;
+}
+
+.especialidades .especialidades-contenedor-titulo-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.especialidades .especialidades-titulos .especialidades-titulos__subtitulo {
+  font-family: "lato-light", serif;
+  font-size: 1.7rem;
+  color: #f7f0f0;
+  margin-bottom: 25px;
+  font-style: normal !important;
+}
+
+.especialidades .especialidades-titulos .palabra-subrayada {
+  border-bottom: 2.25px solid #f7f0f0;
+  padding-bottom: 7px;
+}
+
+.especialidades .especialidades-titulos .especialidades-titulos__titulo {
+  font-family: "lato-bold", serif;
+  font-size: 3rem;
+  color: #f7f0f0;
+}
+
+.especialidades .especialidades-titulo-boton {
+  background-color: transparent;
+  color: #f7f0f0;
+  width: 200px;
+  height: 70px;
+  font-size: 1.7rem;
+  font-family: "lato-regular", serif;
+}
+
+.especialidades .especialidades-titulo-boton:hover {
+  color: #ff6233;
+  background-color: transparent;
+  border-color: #ff6233;
+}
+
+.especialidades .especialidades-contenedor-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.especialidades .especialidades-contenedor-card .especialidades-logo {
+  width: 170px;
+  height: 170px;
+  margin: auto;
+}
+
+.especialidades .especialidades-contenedor-card .especialidades-card {
+  background-color: #f7f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 180px;
+  border-radius: 7px;
+  margin: 30px 0px;
+  padding: 0%;
+}
+
+.especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-icono {
+  width: 70px;
+  height: 70px;
+  margin: 0px 15px;
+}
+
+.especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard {
+  margin-right: 10px;
+}
+
+.especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard .especialidades-card-titulo {
+  font-family: "lato-bold", serif;
+  font-size: 1.5rem;
+  color: #484349;
+}
+
+.especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard .especialidades-card-texto {
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
+  color: #484349;
+}
+
 * {
   padding: 0;
   margin: 0%;
+}
+
+span {
+  border-bottom: 2.25px solid #dd8669;
+  padding-bottom: 7px;
 }

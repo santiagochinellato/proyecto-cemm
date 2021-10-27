@@ -45,15 +45,7 @@
     color: $colorTexto;
     font-size: $subtituloSize;
   }
-  .informacion-subtitulo::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -35px;
-    height: 2px;
-    width: 75px;
-    background: $colorEnfasis;
-  }
+
   .informacion-titulo {
     grid-area: titulo;
     margin: 30px 5% 0px 5%;

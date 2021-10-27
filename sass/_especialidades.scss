@@ -1,0 +1,99 @@
+@import "fonts-variables";
+
+.especialidades {
+  background-image: url(../images/pictures/consultorio-original.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  .especialidades-contendor-general {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    // width: 90%;
+    overflow: hidden !important;
+  }
+  .especialidades-contenedor-titulo-boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+  .especialidades-titulos {
+    // margin-right: 30%;
+
+    .especialidades-titulos__subtitulo {
+      font-family: $subtitulo;
+      font-size: $subtituloSize;
+      color: $colorTerciario;
+      margin-bottom: 25px;
+      font-style: normal !important;
+    }
+
+    .palabra-subrayada {
+      border-bottom: 2.25px solid $colorTerciario;
+      padding-bottom: 7px;
+    }
+
+    .especialidades-titulos__titulo {
+      font-family: $titulo;
+      font-size: $tituloSize;
+      color: $colorTerciario;
+    }
+  }
+  .especialidades-titulo-boton {
+    background-color: transparent;
+    color: $colorTerciario;
+    width: 200px;
+    height: 70px;
+    font-size: $subtituloSize;
+    font-family: $texto;
+  }
+  .especialidades-titulo-boton:hover {
+    color: $colorEnfasisDos;
+    background-color: transparent;
+    border-color: $colorEnfasisDos;
+  }
+  .especialidades-contenedor-card {
+    display: flex;
+    justify-content: space-between;
+
+    .especialidades-logo {
+      width: 170px;
+      height: 170px;
+      margin: auto;
+    }
+    .especialidades-card {
+      background-color: $colorTerciario;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 430px;
+      height: 180px;
+      border-radius: 7px;
+      margin: 30px 0px;
+      padding: 0%;
+      .especialidades-card-icono {
+        width: 70px;
+        height: 70px;
+        margin: 0px 15px;
+      }
+      .especialidades-card-contenedor-titulosCard {
+        margin-right: 10px;
+        .especialidades-card-titulo {
+          font-family: $titulo;
+          font-size: 1.5rem;
+          color: $colorTexto;
+        }
+        .especialidades-card-texto {
+          font-family: $texto;
+          font-size: $textoSize;
+          color: $colorTexto;
+        }
+      }
+    }
+  }
+}

@@ -3,9 +3,13 @@
 @import "fonts-variables";
 @import "header";
 @import "informacion";
-// variables
-
-* {
+@import "especialidades";
+@import "medicos" // variables
+  * {
   padding: 0;
   margin: 0%;
+}
+span {
+  border-bottom: 2.25px solid $colorEnfasis;
+  padding-bottom: 7px;
 }
