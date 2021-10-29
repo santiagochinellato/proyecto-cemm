@@ -458,6 +458,7 @@ header .header-cards .header-cards-card-arrow {
 .especialidades .especialidades-contenedor-card {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .especialidades .especialidades-contenedor-card .especialidades-logo {
@@ -497,6 +498,120 @@ header .header-cards .header-cards-card-arrow {
 .especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard .especialidades-card-texto {
   font-family: "lato-regular", serif;
   font-size: 1.1rem;
+  color: #484349;
+}
+
+@font-face {
+  font-family: "lato-extra-light";
+  src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-extra-light-italic";
+  src: url(../fonts/lato/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url(../fonts/lato/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-bold";
+  src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: bold;
+}
+
+.medicos {
+  display: flex;
+  flex-direction: column;
+}
+
+.medicos .medicos-contenedor-titulos {
+  margin: 100px 0px 50px 30px;
+}
+
+.medicos .medicos-contenedor-titulos .medicos-contenedor-titulos-subitulos {
+  font-family: "lato-light", serif;
+  font-size: 1.7rem;
+  color: #484349;
+  margin-bottom: 25px;
+}
+
+.medicos .medicos-contenedor-titulos .medicos-contenedor-titulos-titulos {
+  font-family: "lato-bold", serif;
+  font-size: 3rem;
+  color: "lato-regular", serif;
+}
+
+.medicos .medicos-contenedor {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.medicos .medicos-contenedor .medicos-contenedor-cards {
+  width: 250px;
+  height: 360px;
+  display: grid;
+  grid-template-areas: "foto" "nombre" "especialidad";
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 15% 15%;
+  border-radius: 7px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-perfil {
+  grid-area: foto;
+}
+
+.medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-perfil .medicos-contenedor-cards-perfil-foto {
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-nombre {
+  grid-area: nombre;
+  font-family: "lato-bold", serif;
+  font-size: 1rem;
+  text-align: center;
+  align-self: center;
+  color: #484349;
+}
+
+.medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-especialidad {
+  grid-area: especialidad;
+  font-family: "lato-light", serif;
+  font-size: 1.1rem;
+  text-align: center;
+  align-self: flex-start;
+  margin: 0;
   color: #484349;
 }
 
