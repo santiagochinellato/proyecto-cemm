@@ -88,17 +88,27 @@ header .header-carousel .header-carousel-contenedor .carousel-item {
 }
 
 header .header-carousel .header-carousel-contenedor .carousel-item .header-imagen-carousel {
-  object-fit: cover !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 header .header-cards {
   z-index: 1 !important;
   position: absolute !important;
   top: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -109,11 +119,21 @@ header .header-cards .header-cards-card-1 {
   background-color: #009ba4;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   color: #f7f0f0;
 }
 
@@ -144,9 +164,15 @@ header .header-cards .header-cards-card-1 .boton-card-1 {
 
 header .header-cards .header-cards-card-1 .card-1-solapa {
   position: absolute !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 150px;
   height: 50px;
   background-color: #009ba4;
@@ -165,11 +191,21 @@ header .header-cards .header-cards-card-2 {
   background-color: white;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #676368;
 }
 
@@ -179,11 +215,21 @@ header .header-cards .header-cards-card-3 {
   background-color: white;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #676368;
 }
 
@@ -193,11 +239,21 @@ header .header-cards .header-cards-card-4 {
   background-color: white;
   margin: 0px 30px;
   border-radius: 7px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #676368;
 }
 
@@ -261,14 +317,20 @@ header .header-cards .header-cards-card-arrow {
 
 .informacion {
   margin: 450px 0px 250px 0px;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "imagen subtitulo" "imagen titulo" "imagen texto" "imagen checkOne" "imagen checkTwo" "imagen checkThree";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 25% 45% 20% 20% 20%;
+      grid-template-areas: "imagen subtitulo" "imagen titulo" "imagen texto" "imagen checkOne" "imagen checkTwo" "imagen checkThree";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 10% 25% 45% 20% 20% 20%;
+      grid-template-rows: 10% 25% 45% 20% 20% 20%;
 }
 
 .informacion .informacion-imagen {
   position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
   grid-area: imagen;
   width: 100%;
   border-radius: 0px 7px 7px 0px;
@@ -293,6 +355,8 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .informacion .informacion-subtitulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: subtitulo;
   margin: 0px 5% 30px 5%;
   position: relative;
@@ -303,6 +367,8 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .informacion .informacion-titulo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: titulo;
   margin: 30px 5% 0px 5%;
   font-family: "lato-bold", serif;
@@ -312,6 +378,8 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .informacion .informacion-texto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: texto;
   margin: auto 15% auto 5%;
   font-family: "lato-regular", serif;
@@ -319,29 +387,53 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .informacion .informacion-checklist-1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: checkOne;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0% 15% 0% 5%;
   font-family: "lato-regular", serif;
   font-size: 1.1rem;
 }
 
 .informacion .informacion-checklist-2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
   grid-area: checkTwo;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: baseline;
-  align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0% 15% 0% 5%;
   font-size: 1.1rem;
 }
 
 .informacion .informacion-checklist-3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
   grid-area: checkThree;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0% 15% 0% 5%;
   font-size: 1.1rem;
 }
@@ -406,17 +498,31 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .especialidades .especialidades-contendor-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
   overflow: hidden !important;
 }
 
 .especialidades .especialidades-contenedor-titulo-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 100px;
   margin-bottom: 50px;
 }
@@ -456,8 +562,12 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .especialidades .especialidades-contenedor-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 100px;
 }
 
@@ -469,9 +579,15 @@ header .header-cards .header-cards-card-arrow {
 
 .especialidades .especialidades-contenedor-card .especialidades-card {
   background-color: #f7f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 430px;
   height: 180px;
   border-radius: 7px;
@@ -544,8 +660,13 @@ header .header-cards .header-cards-card-arrow {
 }
 
 .medicos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .medicos .medicos-contenedor-titulos {
@@ -568,49 +689,68 @@ header .header-cards .header-cards-card-arrow {
 .medicos .medicos-contenedor {
   width: 95%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .medicos .medicos-contenedor .medicos-contenedor-cards {
   width: 250px;
   height: 360px;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "foto" "nombre" "especialidad";
-  grid-template-columns: 100%;
-  grid-template-rows: 70% 15% 15%;
+      grid-template-areas: "foto" "nombre" "especialidad";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 70% 15% 15%;
+      grid-template-rows: 70% 15% 15%;
   border-radius: 7px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 25px;
 }
 
 .medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-perfil {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: foto;
 }
 
 .medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-perfil .medicos-contenedor-cards-perfil-foto {
-  object-fit: cover !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
   width: 100%;
   height: 100%;
   border-radius: 7px 7px 0px 0px;
 }
 
 .medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-nombre {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: nombre;
   font-family: "lato-bold", serif;
   font-size: 1rem;
   text-align: center;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #484349;
 }
 
 .medicos .medicos-contenedor .medicos-contenedor-cards .medicos-contenedor-cards-especialidad {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: especialidad;
   font-family: "lato-light", serif;
   font-size: 1.1rem;
   text-align: center;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin: 0;
   color: #484349;
 }
@@ -624,3 +764,4 @@ span {
   border-bottom: 2.25px solid #dd8669;
   padding-bottom: 7px;
 }
+/*# sourceMappingURL=style.css.map */
