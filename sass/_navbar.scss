@@ -1,5 +1,10 @@
 @import "fonts-variables";
-
+.menu-desktop {
+  height: 90px;
+}
+.navbar-collapse {
+  margin-right: 30px;
+}
 .contactanos-item {
   font-family: $texto;
   color: $colorTerciario !important;

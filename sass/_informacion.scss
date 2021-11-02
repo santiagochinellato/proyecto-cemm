@@ -49,9 +49,16 @@
         width: 150px;
         height: 40px;
         border-radius: 20px !important;
-        background-color: $colorCuaternario;
+        background-color: $colorEnfasis;
         border: $colorCuaternario;
         color: $colorTerciario;
+        font-family: $texto;
+        font-size: $textoSize;
+      }
+      .boton-card-1:hover {
+        background-color: $colorTerciario;
+        border: white;
+        color: $colorPrincipal;
         font-family: $texto;
         font-size: $textoSize;
       }
