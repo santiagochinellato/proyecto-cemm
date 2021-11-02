@@ -1,95 +1,115 @@
 @import "fonts-variables";
 
-.informacion {
-  margin: 450px 0px 250px 0px;
-  display: grid;
-  grid-template-areas:
-    "imagen subtitulo"
-    "imagen titulo"
-    "imagen texto"
-    "imagen checkOne"
-    "imagen checkTwo"
-    "imagen checkThree";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 25% 45% 20% 20% 20%;
+.seccion-informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
 
-  .informacion-imagen {
-    position: relative;
-    grid-area: imagen;
-    width: 100%;
-    border-radius: 0px 7px 7px 0px;
+  .cards {
+    z-index: 1 !important;
+    top: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-    .informacion-imagen-1 {
-      position: absolute;
-      width: 450px;
+    .card-1 {
+      position: relative;
+      width: 350px;
+      height: 550px;
+      background-color: $colorPrincipal;
+      margin: 0px;
       border-radius: 7px;
-      z-index: 1;
-      top: 30%;
-      left: 35%;
-    }
-    .informacion-imagen-2 {
-      position: absolute;
-      width: 450px;
-      border-radius: 7px;
-      z-index: 0;
-      bottom: 30%;
-      left: 10%;
-    }
-  }
-  .informacion-subtitulo {
-    grid-area: subtitulo;
-    margin: 0px 5% 30px 5%;
-    position: relative;
-    font-family: $subtitulo;
-    font-size: 1.7rem;
-    color: $colorTexto;
-    font-size: $subtituloSize;
-  }
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: $colorTerciario;
+      margin-top: -70px;
+      z-index: 2;
 
-  .informacion-titulo {
-    grid-area: titulo;
-    margin: 30px 5% 0px 5%;
-    font-family: $titulo;
-    font-size: 3rem;
-    color: $colorTexto;
-    font-size: $tituloSize;
+      .titulo-card-1 {
+        margin: 4vw 2vw 0px 2vw;
+        font-family: $titulo;
+        font-size: 2.5rem;
+      }
+      .texto-card-1 {
+        margin: 2vw;
+        font-family: $texto;
+        font-size: $textoSize;
+      }
+      .boton-card-1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px !important;
+        background-color: $colorCuaternario;
+        border: $colorCuaternario;
+        color: $colorTerciario;
+        font-family: $texto;
+        font-size: $textoSize;
+      }
+      .card-1-solapa {
+        position: absolute !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        background-color: $colorPrincipal;
+        z-index: 3;
+        top: -6%;
+        left: 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-family: $subtitulo;
+        font-size: $subtituloSize;
+        color: $colorTerciario;
+      }
+    }
   }
-  .informacion-texto {
-    grid-area: texto;
-    margin: auto 15% auto 5%;
-    font-family: $texto;
-    font-size: $textoSize;
-  }
-  .informacion-checklist-1 {
-    grid-area: checkOne;
+  .contenedor-informacion {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 0% 15% 0% 5%;
-    font-family: $texto;
-    font-size: $textoSize;
-  }
-  .informacion-checklist-2 {
-    grid-area: checkTwo;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    margin: 0% 15% 0% 5%;
-    font-size: $textoSize;
-  }
-  .informacion-checklist-3 {
-    grid-area: checkThree;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0% 15% 0% 5%;
-    font-size: $textoSize;
-  }
-  .informacion-checklist {
-    width: 25px;
-    margin-right: 3%;
-  }
-  .informacion_checklist-texto {
-    margin: 0%;
+
+    .contenedor-informacion-textos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 400px;
+      margin: 0px 30px 0px 40px;
+
+      .contenedor-informacion-textos-subtitulo {
+        font-family: $subtitulo;
+        font-size: $subtituloSize;
+        color: $colorTexto;
+        margin-bottom: 25px;
+      }
+
+      .contenedor-informacion-textos-titulo {
+        font-family: $titulo;
+        font-size: $tituloSize;
+        color: $colorTexto;
+        margin-bottom: 25px;
+      }
+
+      .contenedor-informacion-textos-texto {
+        font-family: $texto;
+        font-size: $textoSize;
+        color: $colorTexto;
+      }
+    }
+    .contenedor-informacion-imagen {
+      width: 430px;
+      height: 350px;
+      border-radius: 7px;
+    }
   }
 }

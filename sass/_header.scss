@@ -1,6 +1,7 @@
 @import "fonts-variables";
 
 header {
+  position: relative;
   .header-carousel {
     .header-carousel-contenedor {
       .carousel-item {
@@ -13,121 +14,29 @@ header {
       }
     }
   }
-  .header-cards {
-    z-index: 1 !important;
-    position: absolute !important;
-    top: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+}
 
-    .header-cards-card-1 {
-      position: relative;
-      width: 320px;
-      height: 430px;
-      background-color: $colorPrincipal;
-      margin: 0px 30px;
-      border-radius: 7px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      color: $colorTerciario;
-
-      .titulo-card-1 {
-        margin: 0.5px 0px 0vw 1.3vw;
-        font-family: $titulo;
-        font-size: 2.5rem;
-      }
-      .texto-card-1 {
-        margin: 2vw 15px 3vw 15px;
-        font-family: $texto;
-        font-size: $textoSize;
-      }
-      .boton-card-1 {
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-        height: 40px;
-        border-radius: 20px !important;
-        background-color: $colorCuaternario;
-        border: $colorCuaternario;
-        color: $colorTerciario;
-        font-family: $texto;
-        font-size: $textoSize;
-      }
-      .card-1-solapa {
-        position: absolute !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 50px;
-        background-color: $colorPrincipal;
-        z-index: 3;
-        top: -7%;
-        border-radius: 15px;
-        text-align: center;
-        font-family: $subtitulo;
-        font-size: $subtituloSize;
-        color: $colorTerciario;
-      }
-    }
-    .header-cards-card-2 {
-      width: 220px;
-      height: 330px;
-      background-color: white;
-      margin: 0px 30px;
-      border-radius: 7px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      color: $colorTextoDos;
-    }
-    .header-cards-card-3 {
-      width: 220px;
-      height: 330px;
-      background-color: white;
-      margin: 0px 30px;
-      border-radius: 7px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      color: $colorTextoDos;
-    }
-    .header-cards-card-4 {
-      width: 220px;
-      height: 330px;
-      background-color: white;
-      margin: 0px 30px;
-      border-radius: 7px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      color: $colorTextoDos;
-    }
-    .header-cards-card-logo {
-      width: 70px;
-      margin: 40px 0px 30px 0px;
-    }
-    .header-cards-card-texto {
-      text-align: center;
-
-      font-family: $texto;
-      font-size: $textoSize;
-      margin: 0% 10px 25px 10px;
-    }
-    .header-cards-card-arrow {
-      width: 25px;
-    }
-  }
+.primera-seccion__presentacion-icono-whatsapp {
+  visibility: visible;
+  display: block !important;
+  position: fixed !important;
+  z-index: 100;
+  font-size: 40px;
+  background-color: #1d2326;
+  color: white;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 50%;
+  position: relative;
+  float: right;
+  bottom: 6vw;
+  right: 2vw;
+  background-color: $colorPrincipal;
+}
+.primera-seccion__presentacion-icono-whatsapp:hover {
+  background-color: white !important;
+  color: #02a5a7 !important;
+  text-decoration: none !important;
 }
