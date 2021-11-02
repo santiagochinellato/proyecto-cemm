@@ -3,20 +3,25 @@
 .medicos {
   display: flex;
   flex-direction: column;
-
-  .medicos-contenedor-titulos {
+  .medicos-contenedor-tit {
     margin: 100px 0px 50px 30px;
+    display: flex;
+    justify-content: flex-end;
+    .medicos-contenedor-titulos {
+      width: 98.5%;
+      margin-bottom: 50px;
 
-    .medicos-contenedor-titulos-subitulos {
-      font-family: $subtitulo;
-      font-size: $subtituloSize;
-      color: $colorTexto;
-      margin-bottom: 25px;
-    }
-    .medicos-contenedor-titulos-titulos {
-      font-family: $titulo;
-      font-size: $tituloSize;
-      color: $texto;
+      .medicos-contenedor-titulos-subitulos {
+        font-family: $subtitulo;
+        font-size: $subtituloSize;
+        color: $colorTexto;
+        margin-bottom: 25px;
+      }
+      .medicos-contenedor-titulos-titulos {
+        font-family: $titulo;
+        font-size: $tituloSize;
+        color: $texto;
+      }
     }
   }
   .medicos-contenedor {

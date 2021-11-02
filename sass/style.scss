@@ -5,6 +5,8 @@
 @import "informacion";
 @import "especialidades";
 @import "medicos";
+@import "contacto";
+@import "footer";
 // variables
 * {
   padding: 0;
@@ -13,4 +15,23 @@
 span {
   border-bottom: 2.25px solid $colorEnfasis;
   padding-bottom: 7px;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+textarea {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: 1px solid $colorEnfasis !important;
+  border-radius: 0% !important;
+}
+input {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: 1px solid $colorEnfasis !important;
+  border-radius: 0% !important;
 }
