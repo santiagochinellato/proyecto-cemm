@@ -135,4 +135,148 @@
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
+  .seccion-formulario {
+    margin: 100px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+    .seccion-formulario-contenedor-titulos {
+      display: flex;
+      justify-content: flex-start;
+
+      .contenedor-titulos {
+        width: 50%;
+        margin-bottom: 50px;
+        margin-left: 30px;
+
+        .contenedor-titulos-subtitulos {
+          font-family: $subtitulo;
+          font-size: $subtituloSize;
+          color: $colorTexto;
+          margin-bottom: 25px;
+        }
+        .contenedor-titulos-titulo {
+          font-family: $titulo;
+          font-size: $tituloSize;
+          color: $colorTexto;
+        }
+      }
+    }
+    .seccion-formulario-mapa {
+      height: 200px;
+    }
+    .seccion-formulario-contenedor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .seccion-formulario-contenedor-form {
+        display: grid;
+        grid-template-areas:
+          "form form form"
+          "form form form"
+          "direccion direccion direccion" !important;
+        grid-template-columns: 50% 50% !important;
+        grid-template-rows: 40% 30% 30% !important;
+        width: 90% !important;
+        margin: 0px 0px 80px 0px;
+        column-gap: 0px;
+        row-gap: 15px;
+      }
+      .seccion-formulario-contenedor-formulario {
+        grid-area: form;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .seccion-formulario-contenedor-form-formulario-campos {
+          width: 80%;
+        }
+        .seccion-formulario-contenedor-form-formulario-campos .mb-5 {
+          margin-top: 40px;
+        }
+      }
+      .seccion-formulario-contenedor-form-direccion {
+        grid-area: direccion;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .seccion-formulario-contenedor-form-telefono-fijo {
+        grid-area: fijo;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .seccion-formulario-contenedor-form-telefono-whasapp {
+        grid-area: whatsapp;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .seccion-formulario-contenedor-form-mail-turnos {
+        grid-area: turnos;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+      .seccion-formulario-contenedor-form-mail-consultas {
+        grid-area: consultas;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+      .titulo-contacto {
+        margin: 10px 0px 20px 0px;
+        font-family: $subtitulo;
+        font-size: 1.3rem;
+        color: $colorTexto;
+      }
+      .texto-contacto {
+        font-family: $texto;
+        font-size: $textoSize;
+        color: $texto;
+      }
+      .two {
+        font-family: $texto;
+        font-size: $textoSize;
+        color: $texto;
+        margin-bottom: 0%;
+      }
+      .icono-form {
+        width: 40px;
+      }
+      .contacto-formulario-boton {
+        width: 150px;
+        height: 40px;
+        border-radius: 20px !important;
+        background-color: $colorPrincipal;
+        border: $colorCuaternario;
+        color: $colorTerciario;
+        font-family: $texto;
+        font-size: $textoSize;
+        margin-bottom: 35px;
+      }
+    }
+  }
 }
