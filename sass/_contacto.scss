@@ -67,6 +67,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
     .seccion-formulario-contenedor-form-telefono-fijo {
       grid-area: fijo;
@@ -110,12 +111,12 @@
     }
     .texto-contacto {
       font-family: $texto;
-      font-size: $textoSize;
+      font-size: $textoMobileSize !important;
       color: $texto;
     }
     .two {
       font-family: $texto;
-      font-size: $textoSize;
+      font-size: $textoMobileSize !important;
       color: $texto;
       margin-bottom: 0%;
     }
@@ -130,7 +131,7 @@
       border: $colorCuaternario;
       color: $colorTerciario;
       font-family: $texto;
-      font-size: $textoSize;
+      font-size: $textoMobileSize !important;
     }
   }
 }
