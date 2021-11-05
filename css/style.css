@@ -595,7 +595,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   .seccion-informacion .cards .card-1 {
     position: relative;
     width: 90%;
-    height: 420px;
+    height: 440px;
     background-color: #009ba4;
     margin: 0px;
     border-radius: 7px;
@@ -626,6 +626,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    margin-bottom: 0px !important;
     width: 150px;
     height: 40px;
     border-radius: 20px !important;
