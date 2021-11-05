@@ -1102,6 +1102,10 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   color: #484349;
 }
 
+.owl-carousel {
+  display: none !important;
+}
+
 @media (min-width: 320px) and (max-width: 991px) {
   .medicos {
     margin: 0% !important;
@@ -1161,6 +1165,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     padding: 0% !important;
   }
   .owl-carousel {
+    display: inline !important;
     padding: 0% !important;
   }
   .medicos-contenedor-tit {

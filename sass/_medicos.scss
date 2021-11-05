@@ -76,6 +76,9 @@
     }
   }
 }
+.owl-carousel {
+  display: none !important;
+}
 
 @media (min-width: 320px) and (max-width: 991px) {
   .medicos {
@@ -142,6 +145,7 @@
     padding: 0% !important;
   }
   .owl-carousel {
+    display: inline !important;
     padding: 0% !important;
   }
   .medicos-contenedor-tit {
