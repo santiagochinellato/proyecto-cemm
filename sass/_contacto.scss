@@ -154,13 +154,13 @@
 
         .contenedor-titulos-subtitulos {
           font-family: $subtitulo;
-          font-size: $subtituloMobileSize;
+          font-size: $subtituloMobileSize !important;
           color: $colorTexto;
           margin-bottom: 25px;
         }
         .contenedor-titulos-titulo {
           font-family: $titulo;
-          font-size: $tituloMobileSize;
+          font-size: $tituloMobileSize !important;
           color: $colorTexto;
         }
       }
