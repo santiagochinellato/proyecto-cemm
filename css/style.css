@@ -611,14 +611,16 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     top: -30px;
   }
   .seccion-informacion .cards .card-1 .titulo-card-1 {
-    margin: 10vw 2vw 0px 7vw;
+    margin: 10vw 2vw 0px 2vw;
     font-family: "lato-bold", serif;
     font-size: 2rem;
+    text-align: center;
   }
   .seccion-informacion .cards .card-1 .texto-card-1 {
-    margin: 7vw 2vw 0px 7vw;
+    margin: 7vw 7vw 0px 7vw;
     font-family: "lato-regular", serif;
     font-size: 1rem;
+    text-align: justify;
   }
   .seccion-informacion .cards .card-1 .boton-card-1 {
     margin-left: auto;
@@ -1165,7 +1167,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     margin: 100px 0px 50px 30px;
     display: flex;
     justify-content: flex-end;
-    width: 40% !important;
+    width: 60% !important;
   }
   .medicos-contenedor-tit .medicos-contenedor-titulos {
     margin-bottom: 30px !important;
@@ -1385,19 +1387,19 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     justify-content: flex-start;
   }
   .seccion-formulario .seccion-formulario-contenedor-titulos .contenedor-titulos {
-    width: 50%;
+    width: 60%;
     margin-bottom: 50px;
     margin-left: 30px;
   }
   .seccion-formulario .seccion-formulario-contenedor-titulos .contenedor-titulos .contenedor-titulos-subtitulos {
     font-family: "lato-light", serif;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: #484349;
     margin-bottom: 25px;
   }
   .seccion-formulario .seccion-formulario-contenedor-titulos .contenedor-titulos .contenedor-titulos-titulo {
     font-family: "lato-bold", serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #484349;
   }
   .seccion-formulario .seccion-formulario-mapa {

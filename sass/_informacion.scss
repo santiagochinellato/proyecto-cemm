@@ -159,14 +159,16 @@
         top: -30px;
 
         .titulo-card-1 {
-          margin: 10vw 2vw 0px 7vw;
+          margin: 10vw 2vw 0px 2vw;
           font-family: $titulo;
           font-size: $tituloMobileSize;
+          text-align: center;
         }
         .texto-card-1 {
-          margin: 7vw 2vw 0px 7vw;
+          margin: 7vw 7vw 0px 7vw;
           font-family: $texto;
           font-size: $textoMobileSize;
+          text-align: justify;
         }
         .boton-card-1 {
           margin-left: auto;

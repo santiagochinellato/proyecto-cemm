@@ -148,19 +148,19 @@
       justify-content: flex-start;
 
       .contenedor-titulos {
-        width: 50%;
+        width: 60%;
         margin-bottom: 50px;
         margin-left: 30px;
 
         .contenedor-titulos-subtitulos {
           font-family: $subtitulo;
-          font-size: $subtituloSize;
+          font-size: $subtituloMobileSize;
           color: $colorTexto;
           margin-bottom: 25px;
         }
         .contenedor-titulos-titulo {
           font-family: $titulo;
-          font-size: $tituloSize;
+          font-size: $tituloMobileSize;
           color: $colorTexto;
         }
       }
