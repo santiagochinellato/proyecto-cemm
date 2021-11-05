@@ -13,6 +13,17 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <!-- OAS animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -20,6 +31,7 @@
   <!-- Menu de navegacion desktop  -->
 
   <header>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark menu-desktop " id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./images/logos/IsologoCEMM.png" class="logo-navbar" alt=""></a>
@@ -53,36 +65,39 @@
     <!-- Menu de navegacion mobile  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 menu-mobile " id="display">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="./img/icons/logo-menu-horizontal.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="./images/logos/IsologoCEMM.png" class="logo-menu-mobile" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">
+            <i class="bi bi-list"></i>
+          </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Método</a>
+              <a class="nav-link texto-menu" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Descargá la guia</a>
+              <a class="nav-link texto-menu" href="#">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Planes</a>
+              <a class="nav-link texto-menu" href="#">Especialidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Charlemos</a>
+              <a class="nav-link texto-menu" href="#">Profesionales</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Contactános</a>
+            <li class="nav-item turno-menu">
+              <a class="nav-link  texto-turno" href="#">Solicitar Turno</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Fin menu de navegacion -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade header-carousel" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade header-carousel animate__animated animate__fadeIn"
+      data-bs-ride="carousel">
       <div class="carousel-inner header-carousel-contenedor">
         <div class="carousel-item active">
           <img src="./images/pictures/imagen-morales.jpg" class="d-block w-100 header-imagen-carousel" alt="...">
@@ -98,13 +113,28 @@
         </div>
       </div>
     </div>
+    <div class="header_caja-contacto ">
+      <div class="contacto ">
+        <img class="header_caja-icono" src="./images/icons/home-caja.png" alt="">
+      </div>
+      <div class="contacto ">
+        <img class="header_caja-icono" src="./images/icons/whatsapp-caja.png" alt="">
+      </div>
+      <button type="button" class="btn boton-caja">Solicitar turno</button>
+      <div class="contacto ">
+        <img class="header_caja-icono" src="./images/icons/telephone-caja.png" alt="">
+      </div>
+      <div class="contacto  direc-nodesk">
+        <img class="header_caja-icono" src="./images/icons/email-caja.png" alt="">
+      </div>
+    </div>
   </header>
   <a href="https://api.whatsapp.com/send?phone=5493537565328" target="_blank">
     <i class="bi bi-whatsapp primera-seccion__presentacion-icono-whatsapp">
     </i></a>
   <!-- seccion INFORMACION -->
   <section class="seccion-informacion">
-    <div class="cards">
+    <div class="cards" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
       <div class="card-1">
         <div class="card-1-solapa">
           <h5>Bienvenidos</h5>
@@ -117,7 +147,8 @@
       </div>
     </div>
     <div class="contenedor-informacion">
-      <div class="contenedor-informacion-textos">
+      <div class="contenedor-informacion-textos" data-aos="fade-right" data-aos-anchor="#example-anchor"
+        data-aos-offset="500" data-aos-duration="1000">
         <h6 class="contenedor-informacion-textos-subtitulo"><span>Nuestro</span> compromiso</h6>
         <h1 class="contenedor-informacion-textos-titulo">Un lugar de primer nivel</h1>
         <p class="contenedor-informacion-textos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -126,7 +157,8 @@
           sapiente ab ea odio. Nesciunt quae tenetur illum consequatur rem dicta nobis maxime facere repellendus
           voluptatibus quam iure suscipit, cum maiores libero fugit officia debitis sed?</p>
       </div>
-      <img class="contenedor-informacion-imagen" src="./images/pictures/imagen-morales.jpg" alt="">
+      <img class="contenedor-informacion-imagen" data-aos="fade-left" data-aos-anchor="#example-anchor"
+        data-aos-offset="500" data-aos-duration="1000" src="./images/pictures/imagen-morales.jpg" alt="">
     </div>
   </section>
   <!-- seccion ESPECIALIDADES -->
@@ -138,10 +170,11 @@
           </h6>
           <h2 class="especialidades-titulos__titulo">Especialidades</h2>
         </div>
-        <button type="button" class="btn btn-light especialidades-titulo-boton">Sacar turno</button>
+        <button type="button" class="btn btn-light especialidades-titulo-boton" data-aos="zoom-in"
+          data-aos-duration="1000">Sacar turno</button>
       </div>
       <div class="especialidades-contenedor-card row">
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/cardiologia-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Cardiología.</h3>
@@ -149,7 +182,7 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/clinica-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Clínica Médica</h3>
@@ -157,7 +190,7 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/diabetes-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Díabetes</h3>
@@ -165,7 +198,7 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/endocrino-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Endocrinología</h3>
@@ -173,7 +206,7 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/flebologia-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Flebología</h3>
@@ -181,7 +214,7 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/ginecologia-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Ginecología y Obstetricia
@@ -190,7 +223,7 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/hematologia-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Hematología</h3>
@@ -198,12 +231,205 @@
               doloribus.</p>
           </div>
         </div>
-        <div class="especialidades-card ">
+        <div class="especialidades-card " data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/icons/icons-especialidades/nutricion-2.png" alt="" class="especialidades-card-icono">
           <div class="especialidades-card-contenedor-titulosCard">
             <h3 class="especialidades-card-titulo"> Nutrición</h3>
             <p class="especialidades-card-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
               doloribus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/cardiologia-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Cardiología</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseTwo">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/clinica-2.png" alt="">
+              <h2 class="accordion-titulo">Clínica Médica</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingthree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapsethree">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/diabetes-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Díabetes</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingthree">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseFour">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/endocrino-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Endocrinología</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseFive">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/flebologia-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Flebología</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingFive">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseSix">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/ginecologia-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Ginecología y Obstetricia</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingSix">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseSeven">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/hematologia-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Hematología</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingSeven">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseEight">
+              <img class="logo-especialidades-accordion" src="./images/icons/icons-especialidades/nutricion-2.png"
+                alt="">
+              <h2 class="accordion-titulo">Nutrición</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse "
+            aria-labelledby="panelsStayOpen-headingEight">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is n by default, until the collapse
+              plugin adds
+              the appropriate classes that we use to style each element. These classes control the overall appearance,
+              as well
+              as the ing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+              our
+              default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
           </div>
         </div>
       </div>
@@ -213,12 +439,14 @@
   <section class="container-fluid row medicos ">
     <div class="medicos-contenedor-tit">
       <div class="medicos-contenedor-titulos ">
-        <h6 class="medicos-contenedor-titulos-subitulos "><span>Conoce</span> a nuestros</h6>
+        <h6 class="medicos-contenedor-titulos-subitulos ">
+          <span>Conoce</span> a nuestros
+        </h6>
         <h2 class="medicos-contenedor-titulos-titulos">Profesionales</h2>
       </div>
     </div>
     <div class="medicos-contenedor">
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-1.png  " alt="">
         </div>
@@ -227,7 +455,7 @@
         <p class="medicos-contenedor-cards-especialidad"><span>Cardiología</span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg " alt="">
         </div>
@@ -238,7 +466,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-1.png  " alt="">
         </div>
@@ -249,7 +477,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-2.png  " alt="">
         </div>
@@ -260,7 +488,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg " alt="">
         </div>
@@ -271,7 +499,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-1.png " alt="">
         </div>
@@ -281,7 +509,7 @@
         <p class="medicos-contenedor-cards-especialidad"><span>Diabetes</span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-1.png  " alt="">
         </div>
@@ -292,7 +520,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg  " alt="">
         </div>
@@ -303,7 +531,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg  " alt="">
         </div>
@@ -314,7 +542,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-4.jpg  " alt="">
         </div>
@@ -325,7 +553,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-2.png " alt="">
         </div>
@@ -336,7 +564,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-3.png " alt="">
         </div>
@@ -347,7 +575,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-1.png  " alt="">
         </div>
@@ -358,7 +586,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg  " alt="">
         </div>
@@ -369,7 +597,7 @@
           </span>
         </p>
       </div>
-      <div class="medicos-contenedor-cards">
+      <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
           <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg " alt="">
         </div>
@@ -379,6 +607,208 @@
         <p class="medicos-contenedor-cards-especialidad"><span>Nutrición</span>
         </p>
       </div>
+    </div>
+    <!-- carousel medicos UNO -->
+    <div class="owl-carousel owl-theme OwUNO">
+      <div class="item">
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-1.png  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Marina Romero Villafañe
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Cardiología</span>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Mirta Carbello
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Clínica Médica
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-1.png  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dr. Pablo Loza
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Clínica Médica
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-2.png  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dr. Guido Torres
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Clínica Médica
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Natalia Zemp
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Clínica Médica
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- carousel medicos DOS -->
+    <div class="owl-carousel OwDOS" id="OwDOS">
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-1.png " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dr. Arturo López Rivera
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Diabetes</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-1.png  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Marina Donoso
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Endocrinología
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Maggie Mac Dermott
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Endocrinología
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Teresa Nofal
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Endocrinología
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-4.jpg  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Pamela Zanuttin
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Endocrinología
+            </span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- carousel medicos TRES -->
+    <div class="owl-carousel OwTRES">
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-2.png " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dr. Moisés Nasif
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Flebología
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medico-3.png " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dr. Jorge Romairone
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Ginecología y Obstetricia
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-1.png  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. Susana Vega
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Ginecología y Obstetricia
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg  " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Dra. María Celia Castello
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Hematología
+            </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="medicos-contenedor-cards">
+          <div class="medicos-contenedor-cards-perfil">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg " alt="">
+          </div>
+          <h6 class="medicos-contenedor-cards-nombre">Lic. Tania Muñoz
+
+          </h6>
+          <p class="medicos-contenedor-cards-especialidad"><span>Nutrición</span>
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
   <!-- SECCION CONTACTO -->
@@ -391,34 +821,34 @@
     </div>
     <div class="seccion-formulario-contenedor">
       <div class="seccion-formulario-contenedor-form">
-        <div class="seccion-formulario-contenedor-form-direccion">
+        <div class="seccion-formulario-contenedor-form-direccion" data-aos="zoom-in" data-aos-duration="1000">
           <img class="icono-form" src="./images/icons/map.png" alt="">
           <h6 class="titulo-contacto"><span>Dirección</span></h6>
           <p class="texto-contacto two">Morales 645 - Bariloche, Argentina</p>
           <p class="texto-contacto">Lunes a viernes de 8:30 hrs a 18:00 hrs</p>
 
         </div>
-        <div class="seccion-formulario-contenedor-form-telefono-fijo">
+        <div class="seccion-formulario-contenedor-form-telefono-fijo" data-aos="zoom-in" data-aos-duration="1000">
           <img class="icono-form" src="./images/icons/contact.png" alt="">
           <h6 class="titulo-contacto"><span>Teléfono</span></h6>
           <p class="texto-contacto">+54 294 4890837</p>
         </div>
-        <div class="seccion-formulario-contenedor-form-telefono-whasapp">
+        <div class="seccion-formulario-contenedor-form-telefono-whasapp" data-aos="zoom-in" data-aos-duration="1000">
           <img class="icono-form" src="./images/icons/whatsapp.png" alt="">
           <h6 class="titulo-contacto"><span>Whatsapp</span></h6>
           <p class="texto-contacto">+54 294 4890837</p>
         </div>
-        <div class="seccion-formulario-contenedor-form-mail-turnos">
+        <div class="seccion-formulario-contenedor-form-mail-turnos" data-aos="zoom-in" data-aos-duration="1000">
           <img class="icono-form" src="./images/icons/mail-consultas.png" alt="">
           <h6 class="titulo-contacto"><span>Consultas</span></h6>
           <p class="texto-contacto">info@consultoriosmorales.com.ar</p>
         </div>
-        <div class="seccion-formulario-contenedor-form-mail-consultas">
+        <div class="seccion-formulario-contenedor-form-mail-consultas" data-aos="zoom-in" data-aos-duration="1000">
           <img class="icono-form" src="./images/icons/email.png" alt="">
           <h6 class="titulo-contacto"><span>Turnos</span></h6>
           <p class="texto-contacto">turnos@consultoriosmorales.com.ar</p>
         </div>
-        <div class="seccion-formulario-contenedor-formulario">
+        <div class="seccion-formulario-contenedor-formulario" data-aos="zoom-in" data-aos-duration="1000">
           <form class="seccion-formulario-contenedor-form-formulario-campos">
             <div class="mb-5">
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -446,7 +876,7 @@
       style="border:0;" allowfullscreen="" loading="lazy" class="seccion-formulario-mapa"></iframe>
   </section>
 
-  <footer>
+  <!-- <footer>
     <div class="footer-detalles">
       <img class="footer-logo" src="./images/logos/logoCEMM-blanco.png" alt="">
       <ul class="footer-listado">
@@ -466,15 +896,7 @@
     <div class="footer-creditos">
       <h6 class="footer-creditos-info">Creada por <a href="">Santiago Chinellato</a></h6>
     </div>
-  </footer>
-
-
-
-
-
-
-
-
+  </footer> -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -482,6 +904,113 @@
     </script>
   <!-- js -->
   <script src="./main.js"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>$(document).ready(function () {
+      $(".OwUNO").owlCarousel();
+    });
+    var owl = $('.OwUNO');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      // animateOut: 'fadeOut',
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+
+        },
+        // breakpoint from 480 up
+        590: {
+          items: 2,
+
+        },
+        // breakpoint from 768 up
+        840: {
+          items: 3,
+        }
+      },
+
+    });
+  </script>
+  <script>$(document).ready(function () {
+      $(".OwDOS").owlCarousel();
+    });
+    var owl = $('.OwDOS');
+    owl.owlCarousel({
+      rtl: true,
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      // animateOut: 'fadeOut',
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+
+        },
+        // breakpoint from 480 up
+        590: {
+          items: 2,
+
+        },
+        // breakpoint from 768 up
+        840: {
+          items: 3,
+        }
+      },
+
+    })
+  </script>
+  <script>$(document).ready(function () {
+      $(".OwTRES").owlCarousel();
+    });
+    var owl = $('.OwTRES');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      // animateOut: 'fadeOut',
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+
+        },
+        // breakpoint from 480 up
+        590: {
+          items: 2,
+
+        },
+        // breakpoint from 768 up
+        840: {
+          items: 3,
+        }
+      },
+
+    });
+  </script>
 </body>
 
 </html>

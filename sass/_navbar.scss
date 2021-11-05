@@ -44,24 +44,57 @@
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
+  .bi-whatsapp {
+    visibility: hidden !important;
+  }
   #nav {
     display: none;
   }
   #display {
-    display: none;
+    display: inline;
   }
   .menu-mobile {
     background-color: #59188c;
+  }
+  .navbar-toggler-icon {
+    border-bottom: none;
+    padding-bottom: 7px;
+  }
+  .logo-menu-mobile {
+    width: 170px;
+    height: auto;
   }
 }
 /* FIN MENU */
 
 @media (min-width: 320px) and (max-width: 992px) {
   /* INICIO NAVBAR */
+  .menu-mobile {
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-collapse {
+    margin: 0%;
+  }
+  .navbar-nav {
+    justify-content: center !important;
+    align-items: center;
+  }
   .bg-menu {
-    background-color: #4a148c !important;
+    background-color: #ffffff !important;
   }
 
+  .navbar-toggler {
+    border: 1px solid #009ba4 !important;
+  }
+  .bi-list {
+    color: $colorPrincipal;
+    font-size: 30px !important;
+    padding: auto !important;
+  }
+  .navbar-toggler-icon {
+    background-image: none !important;
+  }
   .navbar-toggler:focus,
   .navbar-toggler:active {
     outline: none;
@@ -74,7 +107,6 @@
     height: 39px;
     font-size: 18px;
     /* padding: 10px; */
-    border-color: #4a148c !important;
   }
 
   .botonmenu:focus {
@@ -113,6 +145,30 @@
     background-color: rgb(255, 255, 255);
     color: #e62b75 !important;
   }
-
+  .turno-menu {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color: $colorEnfasis !important;
+    border: $colorEnfasis !important;
+    color: $colorTerciario !important;
+    font-family: $texto !important;
+    font-size: $textoSize !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white !important;
+  }
+  .turno-menu:hover {
+    color: white !important;
+    background-color: $colorPrincipal !important;
+  }
+  .texto-menu {
+    font-family: $texto !important;
+    font-size: $textoSize !important;
+    color: $colorPrincipal !important;
+  }
+  .texto-turno {
+    color: white !important;
+  }
   /*  FIN NAVBAR */
 }

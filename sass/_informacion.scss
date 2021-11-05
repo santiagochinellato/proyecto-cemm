@@ -31,6 +31,7 @@
       color: $colorTerciario;
       margin-top: -70px;
       z-index: 2;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
       .titulo-card-1 {
         margin: 4vw 2vw 0px 2vw;
@@ -117,6 +118,136 @@
       width: 430px;
       height: 350px;
       border-radius: 7px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .seccion-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    .cards {
+      z-index: 1 !important;
+      top: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .card-1 {
+        position: relative;
+        width: 90%;
+        height: 420px;
+        background-color: $colorPrincipal;
+        margin: 0px;
+        border-radius: 7px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: $colorTerciario;
+        margin-top: 0px;
+        z-index: 2;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        top: -30px;
+
+        .titulo-card-1 {
+          margin: 10vw 2vw 0px 7vw;
+          font-family: $titulo;
+          font-size: $tituloMobileSize;
+        }
+        .texto-card-1 {
+          margin: 7vw 2vw 0px 7vw;
+          font-family: $texto;
+          font-size: $textoMobileSize;
+        }
+        .boton-card-1 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          width: 150px;
+          height: 40px;
+          border-radius: 20px !important;
+          background-color: $colorEnfasis;
+          border: $colorCuaternario;
+          color: $colorTerciario;
+          font-family: $texto;
+          font-size: $textoSize;
+        }
+        .boton-card-1:hover {
+          background-color: $colorTerciario;
+          border: white;
+          color: $colorPrincipal;
+          font-family: $texto;
+          font-size: $textoSize;
+        }
+        .card-1-solapa {
+          display: none !important;
+          position: absolute !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 50px;
+          background-color: $colorPrincipal;
+          z-index: 3;
+          top: -6%;
+          left: 0%;
+          border-radius: 15px;
+          text-align: center;
+          font-family: $subtitulo;
+          font-size: $subtituloMobileSize;
+          color: $colorTerciario;
+        }
+      }
+    }
+    .contenedor-informacion {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+
+      .contenedor-informacion-textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 30px 30px 0px 30px;
+
+        .contenedor-informacion-textos-subtitulo {
+          font-family: $subtitulo;
+          font-size: $subtituloMobileSize;
+          color: $colorTexto;
+          margin-bottom: 30px;
+        }
+
+        .contenedor-informacion-textos-titulo {
+          font-family: $titulo;
+          font-size: $tituloMobileSize;
+          color: $colorTexto;
+          margin-bottom: 25px;
+        }
+
+        .contenedor-informacion-textos-texto {
+          font-family: $texto;
+          font-size: $textoMobileSize;
+          color: $colorTexto;
+          text-align: justify;
+        }
+      }
+      .contenedor-informacion-imagen {
+        width: 90%;
+        height: auto;
+        border-radius: 7px;
+      }
     }
   }
 }

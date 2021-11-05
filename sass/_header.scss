@@ -40,3 +40,83 @@ header {
   color: $colorTerciario !important;
   text-decoration: none !important;
 }
+
+// mediaqueries
+.header_caja-contacto {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .header_caja-contacto {
+    display: inline;
+    position: fixed !important;
+    display: flex;
+    bottom: 0px !important;
+    justify-content: space-around;
+    width: 100% !important;
+
+    border-radius: 2px;
+    --animate-duration: 8s;
+    padding: 4vw 0%;
+    background-color: white;
+    z-index: 3 !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .header_caja-contacto .contacto {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background-image: none !important;
+    z-index: 3 !important;
+  }
+  .header_caja-contacto .contacto p {
+    margin: 0px !important;
+    color: #c0c0c0;
+    display: none;
+  }
+  .header_caja-contacto .bi {
+    color: #c0c0c0;
+    font-size: 1.8rem !important;
+    margin: auto !important;
+  }
+  .header_caja-contacto .direc-nodesk {
+    display: inline !important;
+    margin: auto 0%;
+  }
+  .header_caja-icono {
+    width: 40px;
+  }
+
+  .boton-caja {
+    margin: auto 0px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color: $colorEnfasis !important;
+    border: $colorEnfasis !important;
+    color: $colorTerciario !important;
+    font-family: $texto !important;
+    font-size: 1rem !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .boton-caja:hover {
+    background-color: $colorPrincipal !important;
+    color: $colorTerciario !important;
+  }
+
+  header {
+    position: relative;
+    .header-carousel {
+      .header-carousel-contenedor {
+        .carousel-item {
+          width: 150vw;
+          height: 100%;
+
+          .header-imagen-carousel {
+            object-fit: cover !important;
+          }
+        }
+      }
+    }
+  }
+}

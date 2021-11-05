@@ -131,22 +131,55 @@
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
+  .bi-whatsapp {
+    visibility: hidden !important;
+  }
   #nav {
     display: none;
   }
   #display {
-    display: none;
+    display: inline;
   }
   .menu-mobile {
     background-color: #59188c;
+  }
+  .navbar-toggler-icon {
+    border-bottom: none;
+    padding-bottom: 7px;
+  }
+  .logo-menu-mobile {
+    width: 170px;
+    height: auto;
   }
 }
 
 /* FIN MENU */
 @media (min-width: 320px) and (max-width: 992px) {
   /* INICIO NAVBAR */
+  .menu-mobile {
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-collapse {
+    margin: 0%;
+  }
+  .navbar-nav {
+    justify-content: center !important;
+    align-items: center;
+  }
   .bg-menu {
-    background-color: #4a148c !important;
+    background-color: #ffffff !important;
+  }
+  .navbar-toggler {
+    border: 1px solid #009ba4 !important;
+  }
+  .bi-list {
+    color: #009ba4;
+    font-size: 30px !important;
+    padding: auto !important;
+  }
+  .navbar-toggler-icon {
+    background-image: none !important;
   }
   .navbar-toggler:focus,
   .navbar-toggler:active {
@@ -159,7 +192,6 @@
     height: 39px;
     font-size: 18px;
     /* padding: 10px; */
-    border-color: #4a148c !important;
   }
   .botonmenu:focus {
     outline: none !important;
@@ -191,6 +223,31 @@
   .nav-link-color-letra-contacto:hover {
     background-color: white;
     color: #e62b75 !important;
+  }
+  .turno-menu {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color: #dd8669 !important;
+    border: #dd8669 !important;
+    color: #f7f0f0 !important;
+    font-family: "lato-regular", serif !important;
+    font-size: 1.1rem !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white !important;
+  }
+  .turno-menu:hover {
+    color: white !important;
+    background-color: #009ba4 !important;
+  }
+  .texto-menu {
+    font-family: "lato-regular", serif !important;
+    font-size: 1.1rem !important;
+    color: #009ba4 !important;
+  }
+  .texto-turno {
+    color: white !important;
   }
   /*  FIN NAVBAR */
 }
@@ -276,6 +333,77 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   text-decoration: none !important;
 }
 
+.header_caja-contacto {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .header_caja-contacto {
+    display: inline;
+    position: fixed !important;
+    display: flex;
+    bottom: 0px !important;
+    justify-content: space-around;
+    width: 100% !important;
+    border-radius: 2px;
+    --animate-duration: 8s;
+    padding: 4vw 0%;
+    background-color: white;
+    z-index: 3 !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .header_caja-contacto .contacto {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background-image: none !important;
+    z-index: 3 !important;
+  }
+  .header_caja-contacto .contacto p {
+    margin: 0px !important;
+    color: #c0c0c0;
+    display: none;
+  }
+  .header_caja-contacto .bi {
+    color: #c0c0c0;
+    font-size: 1.8rem !important;
+    margin: auto !important;
+  }
+  .header_caja-contacto .direc-nodesk {
+    display: inline !important;
+    margin: auto 0%;
+  }
+  .header_caja-icono {
+    width: 40px;
+  }
+  .boton-caja {
+    margin: auto 0px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color: #dd8669 !important;
+    border: #dd8669 !important;
+    color: #f7f0f0 !important;
+    font-family: "lato-regular", serif !important;
+    font-size: 1rem !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .boton-caja:hover {
+    background-color: #009ba4 !important;
+    color: #f7f0f0 !important;
+  }
+  header {
+    position: relative;
+  }
+  header .header-carousel .header-carousel-contenedor .carousel-item {
+    width: 150vw;
+    height: 100%;
+  }
+  header .header-carousel .header-carousel-contenedor .carousel-item .header-imagen-carousel {
+    object-fit: cover !important;
+  }
+}
+
 @font-face {
   font-family: "lato-extra-light";
   src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
@@ -351,6 +479,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   color: #f7f0f0;
   margin-top: -70px;
   z-index: 2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .seccion-informacion .cards .card-1 .titulo-card-1 {
@@ -443,6 +572,129 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   width: 430px;
   height: 350px;
   border-radius: 7px;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .seccion-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .seccion-informacion .cards {
+    z-index: 1 !important;
+    top: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccion-informacion .cards .card-1 {
+    position: relative;
+    width: 90%;
+    height: 420px;
+    background-color: #009ba4;
+    margin: 0px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f7f0f0;
+    margin-top: 0px;
+    z-index: 2;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    top: -30px;
+  }
+  .seccion-informacion .cards .card-1 .titulo-card-1 {
+    margin: 10vw 2vw 0px 7vw;
+    font-family: "lato-bold", serif;
+    font-size: 2rem;
+  }
+  .seccion-informacion .cards .card-1 .texto-card-1 {
+    margin: 7vw 2vw 0px 7vw;
+    font-family: "lato-regular", serif;
+    font-size: 1rem;
+  }
+  .seccion-informacion .cards .card-1 .boton-card-1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color: #dd8669;
+    border: #51cdd2;
+    color: #f7f0f0;
+    font-family: "lato-regular", serif;
+    font-size: 1.1rem;
+  }
+  .seccion-informacion .cards .card-1 .boton-card-1:hover {
+    background-color: #f7f0f0;
+    border: white;
+    color: #009ba4;
+    font-family: "lato-regular", serif;
+    font-size: 1.1rem;
+  }
+  .seccion-informacion .cards .card-1 .card-1-solapa {
+    display: none !important;
+    position: absolute !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #009ba4;
+    z-index: 3;
+    top: -6%;
+    left: 0%;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "lato-light", serif;
+    font-size: 1.2rem;
+    color: #f7f0f0;
+  }
+  .seccion-informacion .contenedor-informacion {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .seccion-informacion .contenedor-informacion .contenedor-informacion-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 30px 30px 0px 30px;
+  }
+  .seccion-informacion .contenedor-informacion .contenedor-informacion-textos .contenedor-informacion-textos-subtitulo {
+    font-family: "lato-light", serif;
+    font-size: 1.2rem;
+    color: #484349;
+    margin-bottom: 30px;
+  }
+  .seccion-informacion .contenedor-informacion .contenedor-informacion-textos .contenedor-informacion-textos-titulo {
+    font-family: "lato-bold", serif;
+    font-size: 2rem;
+    color: #484349;
+    margin-bottom: 25px;
+  }
+  .seccion-informacion .contenedor-informacion .contenedor-informacion-textos .contenedor-informacion-textos-texto {
+    font-family: "lato-regular", serif;
+    font-size: 1rem;
+    color: #484349;
+    text-align: justify;
+  }
+  .seccion-informacion .contenedor-informacion .contenedor-informacion-imagen {
+    width: 90%;
+    height: auto;
+    border-radius: 7px;
+  }
 }
 
 @font-face {
@@ -591,6 +843,142 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   color: #484349;
 }
 
+.accordion {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .especialidades {
+    background-image: url(../images/pictures/consultorio-original.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0% !important;
+  }
+  .especialidades .especialidades-contendor-general {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden !important;
+  }
+  .especialidades .especialidades-contenedor-titulo-boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+  .especialidades .especialidades-titulos .especialidades-titulos__subtitulo {
+    font-family: "lato-light", serif;
+    font-size: 1.2rem;
+    color: #f7f0f0;
+    margin-bottom: 25px;
+    font-style: normal !important;
+  }
+  .especialidades .especialidades-titulos .palabra-subrayada {
+    border-bottom: 2.25px solid #f7f0f0;
+    padding-bottom: 7px;
+  }
+  .especialidades .especialidades-titulos .especialidades-titulos__titulo {
+    font-family: "lato-bold", serif;
+    font-size: 2rem;
+    color: #f7f0f0;
+  }
+  .especialidades .especialidades-titulo-boton {
+    background-color: transparent;
+    color: #f7f0f0;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-family: "lato-regular", serif;
+    display: none;
+  }
+  .especialidades .especialidades-titulo-boton:hover {
+    color: #ff6233;
+    background-color: transparent;
+    border-color: #ff6233;
+  }
+  .especialidades .especialidades-contenedor-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    display: none;
+  }
+  .especialidades .especialidades-contenedor-card .especialidades-logo {
+    width: 170px;
+    height: 170px;
+    margin: auto;
+  }
+  .especialidades .especialidades-contenedor-card .especialidades-card {
+    background-color: #f7f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 180px;
+    border-radius: 7px;
+    margin: 30px 0px;
+    padding: 0%;
+  }
+  .especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-icono {
+    width: 70px;
+    height: 70px;
+    margin: 0px 15px;
+  }
+  .especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard {
+    margin-right: 10px;
+  }
+  .especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard .especialidades-card-titulo {
+    font-family: "lato-bold", serif;
+    font-size: 1.3rem;
+    color: #484349;
+  }
+  .especialidades .especialidades-contenedor-card .especialidades-card .especialidades-card-contenedor-titulosCard .especialidades-card-texto {
+    font-family: "lato-regular", serif;
+    font-size: 1rem;
+    color: #484349;
+  }
+  .accordion {
+    display: inline;
+    border-radius: 7px !important;
+  }
+  .accordion-item {
+    margin-bottom: 20px;
+    border-radius: 7px !important;
+  }
+  .accordion-button {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    color: #484349 !important;
+    background-color: white !important;
+    padding: 8px !important;
+    height: 70px;
+    border-radius: 7px !important;
+    border: 0px solid transparent !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #484349 !important;
+    background-color: white !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/icons/up-arrow-o1.png) !important;
+  }
+  .accordion-button::after {
+    background-image: url(../images/icons/up-arrow-o1.png) !important;
+  }
+  .logo-especialidades-accordion {
+    width: 50px;
+    margin: 0px 10px;
+  }
+  .accordion-titulo {
+    font-family: "lato-bold", serif !important;
+    font-size: 1.3rem !important;
+  }
+}
+
 @font-face {
   font-family: "lato-extra-light";
   src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
@@ -710,6 +1098,93 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   align-self: flex-start;
   margin: 0;
   color: #484349;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .medicos {
+    margin: 0% !important;
+    padding: 0% !important;
+  }
+  .medicos-contenedor {
+    display: none !important;
+  }
+  .item {
+    object-fit: cover !important;
+  }
+  .medicos-contenedor-cards {
+    margin: auto;
+    width: 290px;
+    height: 370px;
+    display: grid;
+    grid-template-areas: "foto" "nombre" "especialidad";
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 15% 15%;
+    border-radius: 7px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+  }
+  .medicos-contenedor-cards-perfil {
+    grid-area: foto;
+  }
+  .medicos-contenedor-cards-perfil .medicos-contenedor-cards-perfil-foto {
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 7px 0px 0px;
+  }
+  .medicos-contenedor-cards-nombre {
+    grid-area: nombre;
+    font-family: "lato-bold", serif;
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
+    color: #484349;
+  }
+  .medicos-contenedor-cards-especialidad {
+    grid-area: especialidad;
+    font-family: "lato-light", serif;
+    font-size: 1.1rem;
+    text-align: center;
+    align-self: flex-start;
+    margin: 0;
+    color: #484349;
+  }
+  .owl-dots {
+    display: none;
+  }
+  .medicos-contenedor-tit {
+    margin: 50px 0px 30px 30px !important;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0% !important;
+  }
+  .owl-carousel {
+    padding: 0% !important;
+  }
+  .medicos-contenedor-tit {
+    margin: 100px 0px 50px 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100% !important;
+  }
+  .medicos-contenedor-tit .medicos-contenedor-titulos {
+    margin-bottom: 30px !important;
+  }
+  .medicos-contenedor-tit .medicos-contenedor-titulos .medicos-contenedor-titulos-subitulos {
+    font-family: "lato-light", serif;
+    font-size: 1.2rem !important;
+    color: #484349;
+    margin-bottom: 25px;
+    width: auto !important;
+    object-fit: cover !important;
+  }
+  .medicos-contenedor-tit .medicos-contenedor-titulos .medicos-contenedor-titulos-titulos {
+    font-family: "lato-bold", serif;
+    font-size: 2rem !important;
+    color: "lato-regular", serif;
+    width: auto !important;
+    object-fit: cover !important;
+  }
 }
 
 @font-face {
@@ -1047,4 +1522,9 @@ input {
   border: none !important;
   border-bottom: 1px solid #dd8669 !important;
   border-radius: 0% !important;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }

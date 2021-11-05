@@ -98,3 +98,148 @@
     }
   }
 }
+.accordion {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .especialidades {
+    background-image: url(../images/pictures/consultorio-original.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0% !important;
+
+    .especialidades-contendor-general {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      // width: 90%;
+      overflow: hidden !important;
+    }
+    .especialidades-contenedor-titulo-boton {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 100px;
+      margin-bottom: 50px;
+    }
+    .especialidades-titulos {
+      // margin-right: 30%;
+
+      .especialidades-titulos__subtitulo {
+        font-family: $subtitulo;
+        font-size: $subtituloMobileSize;
+        color: $colorTerciario;
+        margin-bottom: 25px;
+        font-style: normal !important;
+      }
+
+      .palabra-subrayada {
+        border-bottom: 2.25px solid $colorTerciario;
+        padding-bottom: 7px;
+      }
+
+      .especialidades-titulos__titulo {
+        font-family: $titulo;
+        font-size: $tituloMobileSize;
+        color: $colorTerciario;
+      }
+    }
+    .especialidades-titulo-boton {
+      background-color: transparent;
+      color: $colorTerciario;
+      width: 200px;
+      height: 50px;
+      font-size: 1.5rem;
+      font-family: $texto;
+      display: none;
+    }
+    .especialidades-titulo-boton:hover {
+      color: $colorEnfasisDos;
+      background-color: transparent;
+      border-color: $colorEnfasisDos;
+    }
+    .especialidades-contenedor-card {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      display: none;
+
+      .especialidades-logo {
+        width: 170px;
+        height: 170px;
+        margin: auto;
+      }
+      .especialidades-card {
+        background-color: $colorTerciario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 180px;
+        border-radius: 7px;
+        margin: 30px 0px;
+        padding: 0%;
+        .especialidades-card-icono {
+          width: 70px;
+          height: 70px;
+          margin: 0px 15px;
+        }
+        .especialidades-card-contenedor-titulosCard {
+          margin-right: 10px;
+          .especialidades-card-titulo {
+            font-family: $titulo;
+            font-size: 1.3rem;
+            color: $colorTexto;
+          }
+          .especialidades-card-texto {
+            font-family: $texto;
+            font-size: $textoMobileSize;
+            color: $colorTexto;
+          }
+        }
+      }
+    }
+  }
+  .accordion {
+    display: inline;
+    border-radius: 7px !important;
+  }
+  .accordion-item {
+    margin-bottom: 20px;
+    border-radius: 7px !important;
+  }
+  .accordion-button {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    color: $colorTexto !important;
+    background-color: white !important;
+    padding: 8px !important;
+    height: 70px;
+    border-radius: 7px !important;
+    border: 0px solid transparent !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: $colorTexto !important;
+    background-color: white !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/icons/up-arrow-o1.png) !important;
+    // transform: rotate(180deg) !important;
+  }
+  .accordion-button::after {
+    background-image: url(../images/icons/up-arrow-o1.png) !important;
+    // transform: rotate(0deg) !important;
+  }
+  .logo-especialidades-accordion {
+    width: 50px;
+    margin: 0px 10px;
+  }
+  .accordion-titulo {
+    font-family: $titulo !important;
+    font-size: 1.3rem !important;
+  }
+}
