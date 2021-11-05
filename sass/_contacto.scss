@@ -227,7 +227,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        display: none;
+        display: none !important;
       }
 
       .seccion-formulario-contenedor-form-mail-turnos {
@@ -237,7 +237,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        display: none;
+        display: none !important;
       }
       .seccion-formulario-contenedor-form-mail-consultas {
         grid-area: consultas;
@@ -246,7 +246,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        display: none;
+        display: none !important;
       }
       .titulo-contacto {
         margin: 10px 0px 20px 0px;
