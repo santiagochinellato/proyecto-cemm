@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 85%;
   margin: auto;
   margin-bottom: 150px;
 
@@ -251,6 +251,202 @@
         height: auto;
         border-radius: 7px;
       }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  .seccion-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 150px;
+
+    .cards {
+      z-index: 1 !important;
+      top: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .card-1 {
+        position: relative;
+        width: 900px;
+        height: 350px;
+        background-color: $colorPrincipal;
+        margin: 0px;
+        border-radius: 7px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: $colorTerciario;
+        margin-top: -70px;
+        z-index: 2;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
+
+        .titulo-card-1 {
+          margin: 5vw 0px 3vw opx;
+          font-family: $titulo;
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        .texto-card-1 {
+          margin: 2vw;
+          font-family: $texto;
+          font-size: $textoSize;
+          text-align: center;
+          margin: 30px 35px;
+        }
+        .boton-card-1 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          width: 150px;
+          height: 40px;
+          border-radius: 20px !important;
+          background-color: $colorEnfasis;
+          border: $colorCuaternario;
+          color: $colorTerciario;
+          font-family: $texto;
+          font-size: $textoSize;
+        }
+        .boton-card-1:hover {
+          background-color: $colorTerciario;
+          border: white;
+          color: $colorPrincipal;
+          font-family: $texto;
+          font-size: $textoSize;
+        }
+        .card-1-solapa {
+          position: absolute !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 50px;
+          background-color: $colorPrincipal;
+          z-index: 3;
+          top: -6%;
+          left: 0px;
+          border-radius: 15px;
+          text-align: center;
+          font-family: $subtitulo;
+          font-size: $subtituloSize;
+          color: $colorTerciario;
+        }
+      }
+    }
+    .contenedor-informacion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contenedor-informacion-textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        margin: 0px 30px 0px 0px;
+
+        .contenedor-informacion-textos-subtitulo {
+          font-family: $subtitulo;
+          font-size: $subtituloSize;
+          color: $colorTexto;
+          margin-bottom: 25px;
+        }
+
+        .contenedor-informacion-textos-titulo {
+          font-family: $titulo;
+          font-size: $tituloSize;
+          color: $colorTexto;
+          margin-bottom: 25px;
+        }
+
+        .contenedor-informacion-textos-texto {
+          font-family: $texto;
+          font-size: $textoSize;
+          color: $colorTexto;
+        }
+      }
+      .contenedor-informacion-imagen {
+        width: 450px;
+        height: 350px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+@media (min-width: 1508px) and (max-width: 2800px) {
+  .card-1 {
+    position: relative;
+    width: 30vw !important;
+    height: 30vw !important;
+    background-color: $colorPrincipal;
+    margin: 0px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: $colorTerciario;
+    margin-top: -70px;
+    z-index: 2;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+    .titulo-card-1 {
+      margin: 4vw 2vw 0px 2vw;
+      font-family: $titulo;
+      font-size: 2.5rem;
+    }
+    .texto-card-1 {
+      margin: 2vw;
+      font-family: $texto;
+      font-size: 1%$textoSize;
+    }
+    .boton-card-1 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px !important;
+      background-color: $colorEnfasis;
+      border: $colorCuaternario;
+      color: $colorTerciario;
+      font-family: $texto;
+      font-size: $textoSize;
+    }
+    .boton-card-1:hover {
+      background-color: $colorTerciario;
+      border: white;
+      color: $colorPrincipal;
+      font-family: $texto;
+      font-size: $textoSize;
+    }
+    .card-1-solapa {
+      position: absolute !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      background-color: $colorPrincipal;
+      z-index: 3;
+      top: -6%;
+      left: 0px;
+      border-radius: 15px;
+      text-align: center;
+      font-family: $subtitulo;
+      font-size: $subtituloSize;
+      color: $colorTerciario;
     }
   }
 }
