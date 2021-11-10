@@ -3,6 +3,7 @@
 
 <head>
   <!-- Required meta tags -->
+  <!-- TO-DO CEO -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Consultorios de Especialidades Médicas</title>
@@ -45,19 +46,23 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link texto-menu pe-4" href="#">Inicio</a>
+              <a class="nav-link texto-menu pe-4" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu pe-4" href="#">Sobre Nosotros</a>
+              <a class="nav-link texto-menu pe-4" href="#nosotros">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu pe-4" href="#">Especialidades</a>
+              <a class="nav-link texto-menu pe-4" href="#especialidades">Especialidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu pe-4" href="#">Profesionales</a>
+              <a class="nav-link texto-menu pe-4" href="#profesionales">Profesionales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link contactanos-item" href="#">Solicitar Turno</a>
+              <a class="nav-link texto-menu pe-4" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contactanos-item" href="https://turnos.consultoriosmorales.com.ar/"
+                target="_blank">Solicitar Turno</a>
             </li>
           </ul>
         </div>
@@ -78,19 +83,23 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Inicio</a>
+              <a class="nav-link texto-menu" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Sobre Nosotros</a>
+              <a class="nav-link texto-menu" href="#nosotros">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Especialidades</a>
+              <a class="nav-link texto-menu" href="#especialidades">Especialidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Profesionales</a>
+              <a class="nav-link texto-menu" href="#profesionales">Profesionales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item turno-menu">
-              <a class="nav-link  texto-turno" href="#">Solicitar Turno</a>
+              <a class="nav-link  texto-turno" href="https://turnos.consultoriosmorales.com.ar/"
+                target="_blank">Solicitar Turno</a>
             </li>
           </ul>
         </div>
@@ -99,7 +108,7 @@
     <!-- Fin menu de navegacion -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade header-carousel animate__animated animate__fadeIn"
       data-bs-ride="carousel">
-      <div class="carousel-inner header-carousel-contenedor">
+      <div class="carousel-inner header-carousel-contenedor" id="inicio">
         <div class="carousel-item active">
           <img src="./images/pictures/imagen-morales.jpg" class="d-block w-100 header-imagen-carousel" alt="...">
         </div>
@@ -114,19 +123,25 @@
         </div>
       </div>
     </div>
+    <!-- TO-DO -->
     <div class="header_caja-contacto ">
       <div class="contacto ">
-        <img class="header_caja-icono" src="./images/icons/home-caja.png" alt="">
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="header_caja-icono"
+            src="./images/icons/home-caja.png" alt=""></a>
       </div>
       <div class="contacto ">
-        <img class="header_caja-icono" src="./images/icons/whatsapp-caja.png" alt="">
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="header_caja-icono"
+            src="./images/icons/whatsapp-caja.png" alt=""></a>
       </div>
-      <button type="button" class="btn boton-caja">Solicitar turno</button>
+      <a href="https://turnos.consultoriosmorales.com.ar/" target="_blank"><button type="button"
+          class="btn boton-caja">Solicitar turno</button></a>
       <div class="contacto ">
-        <img class="header_caja-icono" src="./images/icons/telephone-caja.png" alt="">
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="header_caja-icono"
+            src="./images/icons/telephone-caja.png" alt=""></a>
       </div>
       <div class="contacto  direc-nodesk">
-        <img class="header_caja-icono" src="./images/icons/email-caja.png" alt="">
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="header_caja-icono"
+            src="./images/icons/email-caja.png" alt=""></a>
       </div>
     </div>
   </header>
@@ -134,8 +149,9 @@
     <i class="bi bi-whatsapp primera-seccion__presentacion-icono-whatsapp">
     </i></a>
   <!-- seccion INFORMACION -->
-  <section class="seccion-informacion">
-    <div class="cards" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
+  <section class="seccion-informacion" id="nosotros">
+    <div class=" cards" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000"
+      data-aos-offset="0">
       <div class="card-1">
         <div class="card-1-solapa">
           <h5>Bienvenidos</h5>
@@ -144,7 +160,8 @@
         <p class="texto-card-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ex vel ipsa consequuntur
           autem dicta totam
           debitis facilis molestias in!Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        <button type="button" class="btn btn-light boton-card-1">Solicitar turno</button>
+        <a href="https://turnos.consultoriosmorales.com.ar/" target="_blank"><button type="button"
+            class="btn btn-light boton-card-1">Solicitar turno</button></a>
       </div>
     </div>
     <div class="contenedor-informacion">
@@ -163,7 +180,7 @@
     </div>
   </section>
   <!-- seccion ESPECIALIDADES -->
-  <section class="especialidades row">
+  <section class="especialidades row" id="especialidades">
     <div class="especialidades-contendor-general col-11">
       <div class="especialidades-contenedor-titulo-boton">
         <div class="especialidades-titulos">
@@ -437,7 +454,7 @@
     </div>
   </section>
   <!-- seccion MEDICOS -->
-  <section class="container-fluid row medicos ">
+  <section class="container-fluid row medicos " id="profesionales">
     <div class="medicos-contenedor-tit">
       <div class="medicos-contenedor-titulos ">
         <h6 class="medicos-contenedor-titulos-subitulos ">
@@ -813,7 +830,7 @@
     </div>
   </section>
   <!-- SECCION CONTACTO -->
-  <section class="seccion-formulario">
+  <section class="seccion-formulario" id="contacto">
     <div class="seccion-formulario-contenedor-titulos">
       <div class="contenedor-titulos">
         <h6 class="contenedor-titulos-subtitulos"><span>Información</span> de</h6>
@@ -874,16 +891,18 @@
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2124.7528516651932!2d-71.31151673231865!3d-41.13770652434972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40e81a7caecf6426!2sConsultorio%20De%20Especialidades%20M%C3%A9dicas%20Morales!5e0!3m2!1ses-419!2sar!4v1635810611637!5m2!1ses-419!2sar"
       style="border:0;" allowfullscreen="" loading="lazy" class="seccion-formulario-mapa"></iframe>
   </section>
-
+  <!-- TO-DO LINKEO -->
   <footer>
     <div class="footer-detalles">
       <img class="footer-logo" src="./images/logos/logoCEMM-blanco.png" alt="">
       <ul class="footer-listado">
-        <li class="footer-listado-link"><a href="">inicio</a> </li>
-        <li class="footer-listado-link"><a href="">Sobre Nosotros</a> </li>
-        <li class="footer-listado-link"><a href="">profesionales</a> </li>
-        <li class="footer-listado-link"><a href="">especialidades</a> </li>
-        <li class="footer-listado-link"><a href="">Solicitar turno</a> </li>
+        <li class="footer-listado-link"><a href="#inicio">inicio</a> </li>
+        <li class="footer-listado-link"><a href="#nosotros">Sobre Nosotros</a> </li>
+        <li class="footer-listado-link"><a href="#especialidades">especialidades</a> </li>
+        <li class="footer-listado-link"><a href="#profesionales">profesionales</a> </li>
+        <li class="footer-listado-link"><a href="#contacto">Contacto</a> </li>
+        <li class="footer-listado-link"><a href="https://turnos.consultoriosmorales.com.ar/" target="_blank">Solicitar
+            turno</a> </li>
       </ul>
       <div class="footer-redes-sociales">
         <a href=""><img class="footer-redes-sociales-contenedor-iconos" src="./images/icons/whatsapp-white.png"
