@@ -322,7 +322,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   border-radius: 50%;
   position: relative;
   float: right;
-  bottom: 6vw;
+  bottom: 9vw;
   right: 2vw;
   background-color: #009ba4;
 }
@@ -1928,6 +1928,21 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   }
 }
 
+.links-contactos {
+  text-decoration: none !important;
+  color: #484349 !important;
+}
+
+.links-contactos :visited {
+  text-decoration: none !important;
+  color: #484349 !important;
+}
+
+.links-contactos :hover {
+  text-decoration: none !important;
+  color: #484349 !important;
+}
+
 @font-face {
   font-family: "lato-extra-light";
   src: url(../fonts/lato/Lato-Thin.ttf) format("truetype");
@@ -2156,4 +2171,34 @@ input {
 :focus {
   outline: 0 !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+* {
+  outline: none !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
 }
