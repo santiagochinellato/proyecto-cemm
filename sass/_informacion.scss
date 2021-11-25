@@ -103,7 +103,7 @@
 
       .contenedor-informacion-textos-titulo {
         font-family: $titulo;
-        font-size: $tituloSize;
+        font-size: 35px;
         color: $colorTexto;
         margin-bottom: 25px;
       }
@@ -115,8 +115,8 @@
       }
     }
     .contenedor-informacion-imagen {
-      width: 430px;
-      height: 350px;
+      width: 450px;
+      height: 400px;
       border-radius: 7px;
     }
   }
@@ -274,8 +274,8 @@
 
       .card-1 {
         position: relative;
-        width: 900px;
-        height: 350px;
+        width: 700px;
+        height: 370px;
         background-color: $colorPrincipal;
         margin: 0px;
         border-radius: 7px;
@@ -308,6 +308,7 @@
           margin-right: auto;
           margin-top: 30px;
           margin-bottom: 30px;
+          padding-bottom: 30px;
           width: 150px;
           height: 40px;
           border-radius: 20px !important;
@@ -364,7 +365,7 @@
 
         .contenedor-informacion-textos-titulo {
           font-family: $titulo;
-          font-size: $tituloSize;
+          font-size: 32px;
           color: $colorTexto;
           margin-bottom: 25px;
         }

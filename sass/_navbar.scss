@@ -67,7 +67,7 @@
 }
 /* FIN MENU */
 
-@media (min-width: 320px) and (max-width: 992px) {
+@media (min-width: 320px) and (max-width: 991px) {
   /* INICIO NAVBAR */
   .menu-mobile {
     background-color: white;
@@ -169,6 +169,122 @@
   }
   .texto-turno {
     color: white !important;
+  }
+  /*  FIN NAVBAR */
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  /* INICIO NAVBAR */
+  .menu-mobile {
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-collapse {
+    margin: 0%;
+  }
+  .navbar-nav {
+    justify-content: center !important;
+    align-items: center;
+  }
+  .bg-menu {
+    background-color: #ffffff !important;
+  }
+
+  .navbar-toggler {
+    border: 1px solid #009ba4 !important;
+  }
+  .bi-list {
+    color: $colorPrincipal;
+    font-size: 30px !important;
+    padding: auto !important;
+  }
+  .navbar-toggler-icon {
+    background-image: none !important;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .botonmenu {
+    color: white !important;
+    border-radius: 4px;
+    height: 39px;
+    font-size: 18px;
+    /* padding: 10px; */
+  }
+
+  .botonmenu:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .lineasboton {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+
+  .nav-link-bg-color {
+    background-color: #e62b75;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav-link-color-letra {
+    color: white !important;
+    font-size: 16px;
+    width: 115px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .nav-link-color-letra-contacto {
+    color: white !important;
+    font-size: 16px;
+    width: 120px;
+    text-align: center;
+    border: 1px solid #e62b75 !important;
+  }
+
+  .nav-link-color-letra-contacto:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e62b75 !important;
+  }
+  .turno-menu {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    background-color: $colorEnfasis !important;
+    border: $colorEnfasis !important;
+    color: $colorTerciario !important;
+    font-family: $texto !important;
+    font-size: $textoSize !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white !important;
+  }
+  .turno-menu:hover {
+    color: white !important;
+    background-color: $colorPrincipal !important;
+  }
+  .texto-menu {
+    font-family: $texto !important;
+    font-size: 14px !important;
+    color: $colorPrincipal !important;
+  }
+  .texto-turno {
+    color: white !important;
+  }
+  .contactanos-item {
+    font-family: $texto;
+    color: $colorTerciario !important;
+    background-color: $colorEnfasis;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px !important;
+    text-align: center;
+    font-size: 14px;
   }
   /*  FIN NAVBAR */
 }
