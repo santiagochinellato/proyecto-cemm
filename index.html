@@ -883,7 +883,7 @@
           </a>
         </div>
         <div class="seccion-formulario-contenedor-formulario" data-aos="zoom-in" data-aos-duration="1000">
-          <form class="seccion-formulario-contenedor-form-formulario-campos">
+          <form class="seccion-formulario-contenedor-form-formulario-campos" action="formulario.php" method="POST">
             <div class="mb-5">
               <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="nombre"
                 placeholder="Nombre y Apellido">
@@ -898,10 +898,10 @@
             </div>
             <div class="mb-5">
               <textarea class="form-control" id="textarea" rows="4" placeholder="Escriba su consulta"
-                name="consulta"></textarea>
+                name="mensaje"></textarea>
             </div>
+            <button type="submit" class="btn btn-primary contacto-formulario-boton">Enviar</button>
           </form>
-          <button type="submit" class="btn btn-primary contacto-formulario-boton">Enviar</button>
         </div>
       </div>
     </div>

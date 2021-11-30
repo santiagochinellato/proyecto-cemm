@@ -1696,6 +1696,9 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
 
 .seccion-formulario .seccion-formulario-contenedor .seccion-formulario-contenedor-formulario .seccion-formulario-contenedor-form-formulario-campos {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .seccion-formulario .seccion-formulario-contenedor .seccion-formulario-contenedor-form-direccion {
@@ -1771,6 +1774,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
 .seccion-formulario .seccion-formulario-contenedor .contacto-formulario-boton {
   width: 150px;
   height: 40px;
+  align-self: center;
   border-radius: 20px !important;
   background-color: #009ba4;
   border: #51cdd2;
