@@ -142,10 +142,17 @@
       align-self: center;
       border-radius: 20px !important;
       background-color: $colorPrincipal;
-      border: $colorCuaternario;
+      border: transparent !important;
       color: $colorTerciario;
       font-family: $texto;
       font-size: $textoMobileSize !important;
+    }
+    .contacto-formulario-boton:hover {
+      background-color: $colorEnfasis;
+      border: white;
+      color: white;
+      font-family: $texto;
+      font-size: $textoSize;
     }
   }
 }

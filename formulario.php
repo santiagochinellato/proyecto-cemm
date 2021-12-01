@@ -1,5 +1,5 @@
 <?php
-$destino = "santiagochinellato@gmail.com"; // Email del Sitio Web 
+$destino = "info@consultoriosmorales.com.ar"; // Email del Sitio Web 
 $nombre = $_POST["nombre"];
 $email = $_POST["email"];  //Entre las comillas va el name que tenga en el form
 $telefono = $_POST["telefono"];

@@ -561,6 +561,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   width: 85%;
   margin: auto;
   margin-bottom: 150px;
+  margin-top: 30px;
 }
 
 .seccion-informacion .cards {
@@ -1788,10 +1789,18 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   align-self: center;
   border-radius: 20px !important;
   background-color: #009ba4;
-  border: #51cdd2;
+  border: transparent !important;
   color: #f7f0f0;
   font-family: "lato-regular", serif;
   font-size: 1rem !important;
+}
+
+.seccion-formulario .seccion-formulario-contenedor .contacto-formulario-boton:hover {
+  background-color: #dd8669;
+  border: white;
+  color: white;
+  font-family: "lato-regular", serif;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
