@@ -828,7 +828,7 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   }
   .seccion-informacion .cards .card-1 {
     position: relative;
-    width: 700px;
+    width: 80%;
     height: 370px;
     background-color: #009ba4;
     margin: 0px;
@@ -1699,6 +1699,15 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 20px 0px;
+}
+
+.seccion-formulario .seccion-formulario-contenedor input:invalid {
+  border: 2px dashed red;
+}
+
+.seccion-formulario .seccion-formulario-contenedor input:valid {
+  border: 2px solid black;
 }
 
 .seccion-formulario .seccion-formulario-contenedor .seccion-formulario-contenedor-form-direccion {
@@ -1758,6 +1767,8 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
   font-family: "lato-regular", serif;
   font-size: 1rem !important;
   color: "lato-regular", serif;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .seccion-formulario .seccion-formulario-contenedor .two {
@@ -1836,6 +1847,12 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .seccion-formulario .seccion-formulario-contenedor .seccion-formulario-contenedor-formulario .con-f {
+    margin: 20px 0px !important;
+  }
+  .seccion-formulario .seccion-formulario-contenedor .seccion-formulario-contenedor-formulario .con-f2 {
+    margin-top: 50px !important;
   }
   .seccion-formulario .seccion-formulario-contenedor .seccion-formulario-contenedor-formulario .seccion-formulario-contenedor-form-formulario-campos {
     width: 80%;
@@ -1916,7 +1933,8 @@ header .header-carousel .header-carousel-contenedor .carousel-item .header-image
     color: #f7f0f0;
     font-family: "lato-regular", serif;
     font-size: 1.1rem;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 }
 

@@ -601,7 +601,7 @@
       </div>
       <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
-          <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg "
+          <img class="medicos-contenedor-cards-perfil-foto" src="./images/fotos-fondo-modificado/sin-persona.jpg"
             alt="Lic. Tania Muñoz">
         </div>
         <h6 class="medicos-contenedor-cards-nombre">Lic. Tania Muñoz
@@ -816,7 +816,8 @@
       <div>
         <div class="medicos-contenedor-cards">
           <div class="medicos-contenedor-cards-perfil">
-            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-3.jpg " alt="">
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/fotos-fondo-modificado/sin-persona.jpg"
+              alt="">
           </div>
           <h6 class="medicos-contenedor-cards-nombre">Lic. Tania Muñoz
 
@@ -852,9 +853,10 @@
         <div class="seccion-formulario-contenedor-form-telefono-fijo" data-aos="zoom-in" data-aos-duration="1000">
 
           <img class="icono-form" src="./images/icons/contact.png" alt="">
-          <h6 class="titulo-contacto"><span>Teléfono</span></h6>
-          <a href="tel: +542944235666" target="_blank" rel="noopener noreferrer" class="links-contactos">
-            <p class="texto-contacto">+54 0294 4235666</p>
+          <h6 class="titulo-contacto"><span>Teléfonos</span></h6>
+          <a href="tel: +02944890837" target="_blank" rel="noopener noreferrer" class="links-contactos">
+            <p class="texto-contacto">0294 4890837 / 0294 154235666</p>
+
           </a>
         </div>
 
@@ -885,21 +887,21 @@
         <div class="seccion-formulario-contenedor-formulario" data-aos="zoom-in" data-aos-duration="1000">
           <form class="seccion-formulario-contenedor-form-formulario-campos" action="formulario.php" method="POST"
             id="formulario">
-            <div class="mb-5">
+            <div class="mb-5 con-f con-f2">
               <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" name="nombre"
-                placeholder="Nombre y Apellido">
+                placeholder="Nombre y Apellido" required>
             </div>
-            <div class="mb-5">
+            <div class="mb-5 con-f">
               <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email"
-                placeholder=" E-mail">
+                placeholder=" E-mail" required>
             </div>
-            <div class="mb-5">
+            <div class="mb-5 con-f">
               <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp"
-                placeholder="Teléfono" name="telefono">
+                placeholder="Teléfono" name="telefono" required>
             </div>
-            <div class="mb-5">
-              <textarea class="form-control" id="textarea" rows="4" placeholder="Escriba su consulta"
-                name="mensaje"></textarea>
+            <div class="mb-5 con-f">
+              <textarea class="form-control" id="textarea" rows="4" placeholder="Escriba su consulta" name="mensaje"
+                required></textarea>
             </div>
             <input type="submit" class="btn btn-primary contacto-formulario-boton" value="Enviar" id="btn-form">
           </form>
