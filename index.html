@@ -446,7 +446,7 @@
       </div>
       <div class="medicos-contenedor-cards" data-aos="zoom-in" data-aos-duration="1000">
         <div class="medicos-contenedor-cards-perfil">
-          <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg "
+          <img class="medicos-contenedor-cards-perfil-foto" src="./images/fotos-fondo-modificado/carbello.jpg"
             alt="Dra. Mirta Carbello">
         </div>
         <h6 class="medicos-contenedor-cards-nombre">Dra. Mirta Carbello
@@ -628,7 +628,7 @@
       <div class="item">
         <div class="medicos-contenedor-cards">
           <div class="medicos-contenedor-cards-perfil">
-            <img class="medicos-contenedor-cards-perfil-foto" src="./images/perfiles/medica-2.jpg "
+            <img class="medicos-contenedor-cards-perfil-foto" src="./images/fotos-fondo-modificado/carbello.jpg"
               alt="Dra. Mirta Carbello">
           </div>
           <h6 class="medicos-contenedor-cards-nombre">Dra. Mirta Carbello
@@ -883,24 +883,25 @@
           </a>
         </div>
         <div class="seccion-formulario-contenedor-formulario" data-aos="zoom-in" data-aos-duration="1000">
-          <form class="seccion-formulario-contenedor-form-formulario-campos" action="formulario.php" method="POST">
+          <form class="seccion-formulario-contenedor-form-formulario-campos" action="formulario.php" method="POST"
+            id="formulario">
             <div class="mb-5">
-              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="nombre"
+              <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" name="nombre"
                 placeholder="Nombre y Apellido">
             </div>
             <div class="mb-5">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email"
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email"
                 placeholder=" E-mail">
             </div>
             <div class="mb-5">
-              <input type="tel" class="form-control" id="tel" aria-describedby="emailHelp" placeholder="Teléfono"
-                name="telefono">
+              <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp"
+                placeholder="Teléfono" name="telefono">
             </div>
             <div class="mb-5">
               <textarea class="form-control" id="textarea" rows="4" placeholder="Escriba su consulta"
                 name="mensaje"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary contacto-formulario-boton">Enviar</button>
+            <input type="submit" class="btn btn-primary contacto-formulario-boton" value="Enviar" id="btn-form">
           </form>
         </div>
       </div>
